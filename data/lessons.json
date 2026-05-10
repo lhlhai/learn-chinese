@@ -1,0 +1,14 @@
+[
+  {
+    "id": "l001",
+    "title": "Chào hỏi cơ bản",
+    "phase": 1,
+    "vocab_ids": ["v001", "v002", "v003"],
+    "dialogue": [
+      { "speaker": "A", "hanzi": "你好！", "pinyin": "Nǐ hǎo!", "vn": "Xin chào!" },
+      { "speaker": "B", "hanzi": "你好！你叫什么名字？", "pinyin": "Nǐ hǎo! Nǐ jiào shénme míngzi?", "vn": "Xin chào! Bạn tên là gì?" },
+      { "speaker": "A", "hanzi": "我叫阮文安。谢谢！", "pinyin": "Wǒ jiào Ruǎn Wén'ān. Xièxie!", "vn": "Tôi tên là Nguyễn Văn An. Cảm ơn!" },
+      { "speaker": "B", "hanzi": "不客气，再见！", "pinyin": "Bú kèqi, zàijiàn!", "vn": "Không có gì, tạm biệt!" }
+    ]
+  }
+]

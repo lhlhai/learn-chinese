@@ -1,0 +1,224 @@
+:root {
+    --primary: #e63946;
+    --secondary: #1d3557;
+    --background: #1a1a2e;
+    --surface: #16213e;
+    --text: #f1faee;
+    --accent: #a8dadc;
+    --success: #457b9d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--surface);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.streak-badge {
+    background: var(--primary);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+.card {
+    background: var(--surface);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+}
+
+/* Flashcard Styles */
+.flashcard-container {
+    perspective: 1000px;
+    height: 300px;
+    margin: 2rem 0;
+}
+
+.flashcard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--surface);
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    padding: 2rem;
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+}
+
+.hanzi {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.pinyin {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.meaning {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.example {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* SRS Controls */
+.srs-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Navigation */
+nav {
+    background: var(--surface);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8rem;
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #333;
+}
+
+.nav-item {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.nav-item.active {
+    opacity: 1;
+    color: var(--primary);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+
+/* Lesson List */
+.lesson-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.lesson-info h3 {
+    font-size: 1.1rem;
+}
+
+.lesson-info p {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Dialogue */
+.dialogue-line {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+}
+
+.speaker {
+    font-weight: bold;
+    color: var(--primary);
+    margin-right: 0.5rem;
+}

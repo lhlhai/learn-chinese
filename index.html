@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Học Tiếng Trung PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e63946">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>🀄 Chinese</h1>
+            <div class="streak-badge">
+                🔥 <span class="streak-count">0</span> ngày
+            </div>
+        </header>
+
+        <main>
+            <!-- Content will be injected here by app.js -->
+            <div style="text-align: center; padding: 2rem;">
+                <p>Đang tải ứng dụng...</p>
+            </div>
+        </main>
+
+        <nav>
+            <a href="#" class="nav-item active" onclick="navigate('home'); return false;">
+                <span class="nav-icon">🏠</span>
+                <span>Trang chủ</span>
+            </a>
+            <a href="#" class="nav-item" onclick="navigate('list'); return false;">
+                <span class="nav-icon">📚</span>
+                <span>Bài học</span>
+            </a>
+            <a href="#" class="nav-item" onclick="navigate('home'); return false;">
+                <span class="nav-icon">⚙️</span>
+                <span>Cài đặt</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
