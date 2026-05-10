@@ -2,7 +2,8 @@
 const CONFIG = {
     SPEECH_ENABLED: true,
     SRS_ENABLED: true,
-    OFFLINE_MODE: true
+    OFFLINE_MODE: true,
+    STROKE_ORDER_ENABLED: true
 };
 
 // State Management
@@ -11,11 +12,12 @@ const state = {
     lessons: [],
     srsData: JSON.parse(localStorage.getItem('srs_data')) || {},
     streak: JSON.parse(localStorage.getItem('streak_data')) || { count: 0, lastDate: null },
-    currentView: 'home', // home, lesson, review, settings
+    currentView: 'home',
     currentLesson: null,
     reviewQueue: [],
     currentCardIndex: 0,
-    isFlipped: false
+    isFlipped: false,
+    practiceWord: null
 };
 
 // Initialize App
@@ -117,6 +119,7 @@ function navigate(view, params = null) {
             state.currentCardIndex = 0;
             state.isFlipped = false;
         }
+        if (view === 'practice') state.practiceWord = params;
     }
     render();
     window.scrollTo(0, 0);
@@ -136,6 +139,9 @@ function render() {
             break;
         case 'review':
             renderReview(main);
+            break;
+        case 'practice':
+            renderStrokeOrder(main);
             break;
         case 'list':
             renderLessonList(main);
@@ -202,15 +208,16 @@ function renderLesson(container) {
         </div>
         <h3>Từ vựng</h3>
         ${vocab.map(v => `
-            <div class="card" onclick="speak('${v.hanzi}')">
+            <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
+                    <div onclick="speak('${v.hanzi}')" style="flex: 1; cursor: pointer;">
                         <span style="font-size: 1.5rem; font-weight: bold;">${v.hanzi}</span>
                         <span style="color: var(--accent); margin-left: 10px;">${v.pinyin}</span>
                     </div>
-                    <span>🔊</span>
+                    <span onclick="speak('${v.hanzi}')" style="cursor: pointer; font-size: 1.2rem;">🔊</span>
                 </div>
                 <p>${v.meaning}</p>
+                ${CONFIG.STROKE_ORDER_ENABLED ? `<button class="btn btn-secondary" style="width: auto; margin-top: 0.5rem; font-size: 0.8rem;" onclick="navigate('practice', ${JSON.stringify(v).replace(/"/g, '&quot;')})">✍️ Luyện viết</button>` : ''}
             </div>
         `).join('')}
         <button class="btn" onclick="startReviewFromLesson()">Ôn tập bài này</button>
@@ -253,6 +260,38 @@ function renderReview(container) {
     `;
 }
 
+function renderStrokeOrder(container) {
+    const word = state.practiceWord;
+    
+    container.innerHTML = `
+        <button class="btn btn-secondary" style="width: auto; margin-bottom: 1rem;" onclick="navigate('lesson', state.currentLesson)">← Quay lại</button>
+        <h2>Luyện viết: ${word.hanzi}</h2>
+        <div class="card">
+            <p style="text-align: center; margin-bottom: 1rem;">${word.meaning} (${word.pinyin})</p>
+            <div id="stroke-order-target"></div>
+            <div class="stroke-controls">
+                <button class="stroke-btn" onclick="replayStroke()">▶ Phát lại</button>
+                <button class="stroke-btn" onclick="resetStroke()">🔄 Đặt lại</button>
+            </div>
+        </div>
+    `;
+    
+    // Initialize HanziWriter
+    setTimeout(() => {
+        if (typeof HanziWriter !== 'undefined') {
+            window.currentWriter = HanziWriter.create('stroke-order-target', {
+                character: word.hanzi,
+                width: 300,
+                height: 300,
+                padding: 5,
+                strokeAnimationSpeed: 1,
+                delayBetweenStrokes: 1000
+            });
+            window.currentWriter.animateCharacter();
+        }
+    }, 100);
+}
+
 // Actions
 window.flipCard = function() {
     state.isFlipped = !state.isFlipped;
@@ -284,6 +323,18 @@ window.startReviewFromLesson = function() {
     const lesson = state.currentLesson;
     const vocab = state.vocab.filter(v => lesson.vocab_ids.includes(v.id));
     navigate('review', vocab);
+};
+
+window.replayStroke = function() {
+    if (window.currentWriter) {
+        window.currentWriter.animateCharacter();
+    }
+};
+
+window.resetStroke = function() {
+    if (window.currentWriter) {
+        window.currentWriter.reset();
+    }
 };
 
 window.navigate = navigate;

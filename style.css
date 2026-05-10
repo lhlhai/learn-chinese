@@ -222,3 +222,64 @@ nav {
     color: var(--primary);
     margin-right: 0.5rem;
 }
+
+
+/* Stroke Order Practice */
+.stroke-order-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stroke-canvas {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    cursor: crosshair;
+}
+
+.stroke-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.stroke-count {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.stroke-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+.stroke-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.stroke-btn {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: var(--secondary);
+    color: var(--text);
+    transition: transform 0.1s;
+}
+
+.stroke-btn:active {
+    transform: scale(0.95);
+}
