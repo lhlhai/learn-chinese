@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #0077B6;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            color: #FFFFFF;
+        }
+        .angled-block {
+            position: absolute;
+            top: 0;
+            right: -15%;
+            width: 65%;
+            height: 100%;
+            background-color: #FFFFFF;
+            transform: rotate(15deg);
+            transform-origin: top right;
+            z-index: 1;
+        }
+        .header-area {
+            position: relative;
+            z-index: 2;
+            padding-top: 120px;
+            padding-left: 80px;
+            width: 500px;
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 75px;
+            text-transform: uppercase;
+            line-height: 0.85;
+            color: #FFFFFF;
+            margin: 0;
+        }
+        .body-area {
+            position: absolute;
+            right: 60px;
+            top: 140px;
+            width: 520px;
+            z-index: 2;
+            color: #03045E;
+        }
+        .point {
+            margin-top: 45px;
+        }
+        .point-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #F72585;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+        .point-desc {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 12px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="angled-block"></div>
+        <div class="header-area">
+            <h2>Giao diện<br>Flashcard<br>Thông minh</h2>
+        </div>
+        <div class="body-area">
+            <div class="point">
+                <div class="point-title">Thiết kế thẻ lật trực quan</div>
+                <div class="point-desc">Mô phỏng trải nghiệm học thẻ giấy truyền thống với hiệu ứng lật mặt hiện đại, giúp tập trung tối đa vào nội dung.</div>
+            </div>
+            <div class="point">
+                <div class="point-title">Thông tin đa chiều</div>
+                <div class="point-desc">Hiển thị đầy đủ Hán tự, Pinyin, nghĩa tiếng Việt và ví dụ minh họa thực tế trên cùng một thẻ học.</div>
+            </div>
+            <div class="point">
+                <div class="point-title">Phản hồi tương tác</div>
+                <div class="point-desc">Hệ thống nút bấm "Nhớ" và "Quên" được bố trí thuận tiện để người dùng cập nhật trạng thái học tập tức thì.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

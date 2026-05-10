@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "title": "Ứng dụng Học Tiếng Trung PWA: Công nghệ & Tính năng",
+    "created": 1778427841.8965547,
+    "last_updated": 1778427932.9325626,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "title_slide",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "pwa_tech",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "srs_algorithm",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "flashcard_ui",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "stroke_order",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "tts_feature",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "roadmap_streak",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "conclusion",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "Ứng dụng Học Tiếng Trung PWA: Công nghệ & Tính năng",
+      "summary": "Trang tiêu đề giới thiệu tổng quan về dự án học tiếng Trung 7 tháng.",
+      "image_plan": "/home/ubuntu/learn-chinese/assets/icons/icon-512.png - The image is a stylized Chinese character '中' which is highly relevant to an app for learning Chinese. It serves as a good visual representation of the app's focus.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "pwa_tech",
+      "title": "Sức mạnh của Progressive Web App (PWA)",
+      "summary": "Giải thích các ưu điểm của PWA như cài đặt trực tiếp, hoạt động offline và tốc độ tải trang.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "srs_algorithm",
+      "title": "Thuật toán Spaced Repetition (SRS) SM-2",
+      "summary": "Chi tiết về cách thuật toán SM-2 tối ưu hóa việc ghi nhớ và tiết kiệm thời gian học.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "flashcard_ui",
+      "title": "Giao diện Flashcard Thông minh",
+      "summary": "Giới thiệu thiết kế thẻ lật trực quan và các thành phần thông tin trên thẻ.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "stroke_order",
+      "title": "Hướng dẫn Viết chữ Hán (Stroke Order)",
+      "summary": "Tính năng mới tích hợp HanziWriter giúp người dùng luyện viết đúng quy tắc.",
+      "image_plan": "/home/ubuntu/learn-chinese/assets/icons/icon-192.png - The image shows the Chinese character '中' in a more traditional calligraphic style, which is relevant to the \"Hướng dẫn Viết chữ Hán (Stroke Order)\" slide. It visually represents the act of writing Chinese characters.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "tts_feature",
+      "title": "Phát âm Chuẩn với Web Speech API",
+      "summary": "Công nghệ Text-to-Speech giúp luyện nghe và phát âm mọi lúc mọi nơi.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "roadmap_streak",
+      "title": "Lộ trình Học tập & Hệ thống Streak",
+      "summary": "Kế hoạch học tập 3 giai đoạn và cách duy trì động lực qua chuỗi ngày học.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "conclusion",
+      "title": "Kết luận & Bắt đầu Trải nghiệm",
+      "summary": "Tóm tắt lợi ích và kêu gọi người dùng bắt đầu học ngay trên GitHub Pages.",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

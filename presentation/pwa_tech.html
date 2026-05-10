@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #0077B6;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            color: #FFFFFF;
+        }
+        .angled-block {
+            position: absolute;
+            top: 0;
+            right: -10%;
+            width: 60%;
+            height: 100%;
+            background-color: #FFFFFF;
+            transform: rotate(15deg);
+            transform-origin: top right;
+            z-index: 1;
+        }
+        .header-area {
+            position: relative;
+            z-index: 2;
+            padding-top: 100px;
+            padding-left: 80px;
+            width: 500px;
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 70px;
+            text-transform: uppercase;
+            line-height: 0.9;
+            color: #FFFFFF;
+        }
+        .body-area {
+            position: absolute;
+            right: 50px;
+            top: 150px;
+            width: 500px;
+            z-index: 2;
+            color: #03045E;
+        }
+        .point {
+            margin-top: 40px;
+        }
+        .point-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #F72585;
+            text-transform: uppercase;
+        }
+        .point-desc {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="angled-block"></div>
+        <div class="header-area">
+            <h2>Sức mạnh<br>của PWA</h2>
+        </div>
+        <div class="body-area">
+            <div class="point">
+                <div class="point-title">Cài đặt dễ dàng</div>
+                <div class="point-desc">Không cần App Store, cài đặt trực tiếp từ trình duyệt chỉ với một chạm.</div>
+            </div>
+            <div class="point">
+                <div class="point-title">Offline hoàn toàn</div>
+                <div class="point-desc">Học mọi lúc mọi nơi nhờ Service Worker lưu trữ dữ liệu cục bộ.</div>
+            </div>
+            <div class="point">
+                <div class="point-title">Tốc độ vượt trội</div>
+                <div class="point-desc">Tải trang tức thì với chiến lược Cache First, tối ưu hóa trải nghiệm người dùng.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

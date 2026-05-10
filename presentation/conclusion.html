@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #0077B6;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            color: #03045E;
+        }
+        .angled-block {
+            position: absolute;
+            top: 0;
+            left: -15%;
+            width: 70%;
+            height: 100%;
+            background-color: #FFFFFF;
+            transform: rotate(-15deg);
+            transform-origin: top left;
+            z-index: 1;
+        }
+        .content-area {
+            position: relative;
+            z-index: 2;
+            padding-top: 120px;
+            padding-left: 80px;
+            width: 550px;
+        }
+        .summary-point {
+            margin-top: 40px;
+        }
+        .summary-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #F72585;
+            text-transform: uppercase;
+        }
+        .summary-desc {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #03045E;
+        }
+        .cta-area {
+            position: absolute;
+            right: 80px;
+            top: 200px;
+            width: 500px;
+            z-index: 2;
+            text-align: right;
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 80px;
+            text-transform: uppercase;
+            line-height: 0.9;
+            color: #FFFFFF;
+        }
+        .url-text {
+            font-size: 24px;
+            font-weight: 400;
+            color: #F72585;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            padding-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="angled-block"></div>
+        <div class="content-area">
+            <div class="summary-point">
+                <div class="summary-title">Giải pháp tối ưu</div>
+                <div class="summary-desc">Sự kết hợp hoàn hảo giữa công nghệ PWA hiện đại và phương pháp học SRS khoa học.</div>
+            </div>
+            <div class="summary-point">
+                <div class="summary-title">Mở rộng tương lai</div>
+                <div class="summary-desc">Sắp ra mắt: Quiz nhận diện thanh điệu, luyện viết nâng cao và thống kê chi tiết.</div>
+            </div>
+        </div>
+        <div class="cta-area">
+            <h2>Bắt đầu<br>Học ngay</h2>
+            <div class="url-text">lhlhai.github.io/learn-chinese</div>
+        </div>
+    </div>
+</body>
+</html>
