@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g001",
+    "title": "Câu hỏi với '吗' (ma)",
+    "description": "Để biến một câu trần thuật thành câu hỏi Có/Không, chỉ cần thêm '吗' vào cuối câu.",
+    "structure": "Chủ ngữ + Động từ/Tính từ + 吗？",
+    "examples": [
+      { "hanzi": "你好吗？", "pinyin": "Nǐ hǎo ma?", "vn": "Bạn khỏe không?" },
+      { "hanzi": "你是老师吗？", "pinyin": "Nǐ shì lǎoshī ma?", "vn": "Bạn là giáo viên phải không?" }
+    ]
+  },
+  {
+    "id": "g002",
+    "title": "Phủ định với '不' (bù)",
+    "description": "'不' dùng để phủ định hành động trong hiện tại hoặc tương lai, hoặc phủ định tính chất.",
+    "structure": "Chủ ngữ + 不 + Động từ/Tính từ",
+    "examples": [
+      { "hanzi": "我不吃米饭。", "pinyin": "Wǒ bù chī mǐfàn.", "vn": "Tôi không ăn cơm." },
+      { "hanzi": "他不高兴。", "pinyin": "Tā bù gāoxìng.", "vn": "Anh ấy không vui." }
+    ]
+  },
+  {
+    "id": "g003",
+    "title": "Sở hữu với '的' (de)",
+    "description": "'的' dùng để nối định ngữ và trung tâm ngữ, biểu thị quan hệ sở hữu hoặc tính chất.",
+    "structure": "Người sở hữu + 的 + Vật sở hữu",
+    "examples": [
+      { "hanzi": "我的书", "pinyin": "Wǒ de shū.", "vn": "Sách của tôi." },
+      { "hanzi": "老师的名字", "pinyin": "Lǎoshī de míngzi.", "vn": "Tên của thầy giáo." }
+    ]
+  }
+]

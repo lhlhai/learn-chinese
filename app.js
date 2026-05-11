@@ -3,17 +3,20 @@ const CONFIG = {
     SPEECH_ENABLED: true,
     SRS_ENABLED: true,
     OFFLINE_MODE: true,
-    STROKE_ORDER_ENABLED: true
+    STROKE_ORDER_ENABLED: true,
+    GRAMMAR_ENABLED: true
 };
 
 // State Management
 const state = {
     vocab: [],
     lessons: [],
+    grammar: [],
     srsData: JSON.parse(localStorage.getItem('srs_data')) || {},
     streak: JSON.parse(localStorage.getItem('streak_data')) || { count: 0, lastDate: null },
     currentView: 'home',
     currentLesson: null,
+    currentGrammarIndex: 0,
     reviewQueue: [],
     currentCardIndex: 0,
     isFlipped: false,
@@ -24,12 +27,14 @@ const state = {
 // Initialize App
 async function init() {
     try {
-        const [vocabRes, lessonsRes] = await Promise.all([
+        const [vocabRes, lessonsRes, grammarRes] = await Promise.all([
             fetch('data/vocab.json'),
-            fetch('data/lessons.json')
+            fetch('data/lessons.json'),
+            fetch('data/grammar.json')
         ]);
         state.vocab = await vocabRes.json();
         state.lessons = await lessonsRes.json();
+        state.grammar = await grammarRes.json();
         
         updateStreak();
         render();
@@ -144,6 +149,9 @@ function render() {
         case 'practice':
             renderStrokeOrder(main);
             break;
+        case 'grammar':
+            renderGrammar(main);
+            break;
         case 'list':
             renderLessonList(main);
             break;
@@ -167,8 +175,8 @@ function renderHome(container) {
         </div>
         <div class="card">
             <h3>Bài học tiếp theo</h3>
-            <p>${state.lessons[0].title}</p>
-            <button class="btn btn-secondary" onclick="navigate('lesson', state.lessons[0])">Học ngay</button>
+            <p>${state.lessons.length > 0 ? state.lessons[0].title : 'Chưa có bài học'}</p>
+            ${state.lessons.length > 0 ? `<button class="btn btn-secondary" onclick="navigate('lesson', state.lessons[0])">Học ngay</button>` : ''}
         </div>
     `;
 }
@@ -308,6 +316,43 @@ function animateSequentially(index) {
             onComplete: () => animateSequentially(index + 1)
         });
     }
+}
+
+function renderGrammar(container) {
+    let html = `
+        <button class="btn btn-secondary" style="width: auto; margin-bottom: 1rem;" onclick="navigate('home')">← Quay lại</button>
+        <h2>Ngữ pháp tiếng Trung</h2>
+        <div class="grammar-nav" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; overflow-x: auto;">
+    `;
+    
+    state.grammar.forEach((g, index) => {
+        html += `<button class="btn ${state.currentGrammarIndex === index ? '' : 'btn-secondary'}" style="white-space: nowrap; font-size: 0.8rem;" onclick="state.currentGrammarIndex = ${index}; render()">${g.title}</button>`;
+    });
+    
+    html += `</div>`;
+    
+    if (state.grammar.length > 0) {
+        const grammar = state.grammar[state.currentGrammarIndex];
+        html += `
+            <div class="card">
+                <h3>${grammar.title}</h3>
+                <p style="margin: 1rem 0;">${grammar.description}</p>
+                <div style="background: #f0f0f0; padding: 1rem; border-radius: 8px; margin: 1rem 0; color: #333;">
+                    <strong>Cấu trúc:</strong> ${grammar.structure}
+                </div>
+                <h4 style="margin-top: 1rem;">Ví dụ:</h4>
+                ${grammar.examples.map(ex => `
+                    <div class="dialogue-line" onclick="speak('${ex.hanzi}')">
+                        <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">${ex.hanzi}</div>
+                        <div style="color: var(--accent); margin-bottom: 0.5rem;">${ex.pinyin}</div>
+                        <div style="color: #888;">${ex.vn}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+    
+    container.innerHTML = html;
 }
 
 // Actions

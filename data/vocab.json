@@ -31,5 +31,104 @@
     "example_meaning": "Thầy giáo, tạm biệt!",
     "lesson": "l001",
     "hsk_level": 1
+  },
+  {
+    "id": "v004",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "Số 1",
+    "tone_marks": [1],
+    "example": "我有一个哥哥。",
+    "example_meaning": "Tôi có một người anh trai.",
+    "lesson": "l002",
+    "hsk_level": 1
+  },
+  {
+    "id": "v005",
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "Số 2",
+    "tone_marks": [2],
+    "example": "我有两个苹果。",
+    "example_meaning": "Tôi có hai quả táo.",
+    "lesson": "l002",
+    "hsk_level": 1
+  },
+  {
+    "id": "v006",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning": "Số 3",
+    "tone_marks": [1],
+    "example": "三月是春天。",
+    "example_meaning": "Tháng ba là mùa xuân.",
+    "lesson": "l002",
+    "hsk_level": 1
+  },
+  {
+    "id": "v007",
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "meaning": "Bố",
+    "tone_marks": [4, 0],
+    "example": "我爸爸是医生。",
+    "example_meaning": "Bố tôi là bác sĩ.",
+    "lesson": "l003",
+    "hsk_level": 1
+  },
+  {
+    "id": "v008",
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "meaning": "Mẹ",
+    "tone_marks": [1, 0],
+    "example": "我妈妈很漂亮。",
+    "example_meaning": "Mẹ tôi rất đẹp.",
+    "lesson": "l003",
+    "hsk_level": 1
+  },
+  {
+    "id": "v009",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "meaning": "Nhà, gia đình",
+    "tone_marks": [1],
+    "example": "我家在北京。",
+    "example_meaning": "Nhà tôi ở Bắc Kinh.",
+    "lesson": "l003",
+    "hsk_level": 1
+  },
+  {
+    "id": "v010",
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "meaning": "Ăn",
+    "tone_marks": [1],
+    "example": "你想吃什么？",
+    "example_meaning": "Bạn muốn ăn gì?",
+    "lesson": "l004",
+    "hsk_level": 1
+  },
+  {
+    "id": "v011",
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "meaning": "Cơm",
+    "tone_marks": [3, 4],
+    "example": "我喜欢吃米饭。",
+    "example_meaning": "Tôi thích ăn cơm.",
+    "lesson": "l004",
+    "hsk_level": 1
+  },
+  {
+    "id": "v012",
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "meaning": "Uống",
+    "tone_marks": [1],
+    "example": "我想喝水。",
+    "example_meaning": "Tôi muốn uống nước.",
+    "lesson": "l004",
+    "hsk_level": 1
   }
 ]

@@ -6,9 +6,37 @@
     "vocab_ids": ["v001", "v002", "v003"],
     "dialogue": [
       { "speaker": "A", "hanzi": "你好！", "pinyin": "Nǐ hǎo!", "vn": "Xin chào!" },
-      { "speaker": "B", "hanzi": "你好！你叫什么名字？", "pinyin": "Nǐ hǎo! Nǐ jiào shénme míngzi?", "vn": "Xin chào! Bạn tên là gì?" },
-      { "speaker": "A", "hanzi": "我叫阮文安。谢谢！", "pinyin": "Wǒ jiào Ruǎn Wén'ān. Xièxie!", "vn": "Tôi tên là Nguyễn Văn An. Cảm ơn!" },
-      { "speaker": "B", "hanzi": "不客气，再见！", "pinyin": "Bú kèqi, zàijiàn!", "vn": "Không có gì, tạm biệt!" }
+      { "speaker": "B", "hanzi": "你好！你叫什么名字？", "pinyin": "Nǐ hǎo! Nǐ jiào shénme míngzi?", "vn": "Xin chào! Bạn tên là gì?" }
+    ]
+  },
+  {
+    "id": "l002",
+    "title": "Số đếm cơ bản",
+    "phase": 1,
+    "vocab_ids": ["v004", "v005", "v006"],
+    "dialogue": [
+      { "speaker": "A", "hanzi": "你有几个苹果？", "pinyin": "Nǐ yǒu jǐ gè píngguǒ?", "vn": "Bạn có mấy quả táo?" },
+      { "speaker": "B", "hanzi": "我有三个苹果。", "pinyin": "Wǒ yǒu sān gè píngguǒ.", "vn": "Tôi có ba quả táo." }
+    ]
+  },
+  {
+    "id": "l003",
+    "title": "Gia đình của tôi",
+    "phase": 1,
+    "vocab_ids": ["v007", "v008", "v009"],
+    "dialogue": [
+      { "speaker": "A", "hanzi": "你家有几口人？", "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?", "vn": "Nhà bạn có mấy người?" },
+      { "speaker": "B", "hanzi": "我家 có ba người: 爸爸，妈妈和我。", "pinyin": "Wǒ jiā yǒu sān kǒu rén: bàba, māma hé wǒ.", "vn": "Nhà tôi có ba người: bố, mẹ và tôi." }
+    ]
+  },
+  {
+    "id": "l004",
+    "title": "Ăn uống",
+    "phase": 1,
+    "vocab_ids": ["v010", "v011", "v012"],
+    "dialogue": [
+      { "speaker": "A", "hanzi": "你想吃什么？", "pinyin": "Nǐ xiǎng chī shénme?", "vn": "Bạn muốn ăn gì?" },
+      { "speaker": "B", "hanzi": "我想吃米饭，喝茶。", "pinyin": "Wǒ xiǎng chī mǐfàn, hē chá.", "vn": "Tôi muốn ăn cơm, uống trà." }
     ]
   }
 ]
