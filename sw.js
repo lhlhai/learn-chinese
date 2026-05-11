@@ -1,9 +1,10 @@
-const CACHE_NAME = 'chinese-pwa-v1';
+const CACHE_NAME = 'chinese-pwa-v2';
 const ASSETS = [
     './',
     './index.html',
     './style.css',
     './app.js',
+    './hanzi-writer.min.js',
     './manifest.json',
     './data/vocab.json',
     './data/lessons.json',

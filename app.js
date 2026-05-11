@@ -17,7 +17,8 @@ const state = {
     reviewQueue: [],
     currentCardIndex: 0,
     isFlipped: false,
-    practiceWord: null
+    practiceWord: null,
+    currentWriters: []
 };
 
 // Initialize App
@@ -262,13 +263,16 @@ function renderReview(container) {
 
 function renderStrokeOrder(container) {
     const word = state.practiceWord;
+    const characters = Array.from(word.hanzi);
     
     container.innerHTML = `
         <button class="btn btn-secondary" style="width: auto; margin-bottom: 1rem;" onclick="navigate('lesson', state.currentLesson)">← Quay lại</button>
         <h2>Luyện viết: ${word.hanzi}</h2>
         <div class="card">
             <p style="text-align: center; margin-bottom: 1rem;">${word.meaning} (${word.pinyin})</p>
-            <div id="stroke-order-target"></div>
+            <div id="stroke-targets" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                ${characters.map((char, index) => `<div id="char-${index}" style="background: white; border: 1px solid #ccc; border-radius: 8px;"></div>`).join('')}
+            </div>
             <div class="stroke-controls">
                 <button class="stroke-btn" onclick="replayStroke()">▶ Phát lại</button>
                 <button class="stroke-btn" onclick="resetStroke()">🔄 Đặt lại</button>
@@ -276,20 +280,34 @@ function renderStrokeOrder(container) {
         </div>
     `;
     
-    // Initialize HanziWriter
+    // Initialize HanziWriter for each character
+    state.currentWriters = [];
     setTimeout(() => {
         if (typeof HanziWriter !== 'undefined') {
-            window.currentWriter = HanziWriter.create('stroke-order-target', {
-                character: word.hanzi,
-                width: 300,
-                height: 300,
-                padding: 5,
-                strokeAnimationSpeed: 1,
-                delayBetweenStrokes: 1000
+            characters.forEach((char, index) => {
+                const writer = HanziWriter.create(`char-${index}`, char, {
+                    width: 150,
+                    height: 150,
+                    padding: 5,
+                    strokeAnimationSpeed: 1,
+                    delayBetweenStrokes: 500,
+                    strokeColor: '#e63946'
+                });
+                state.currentWriters.push(writer);
             });
-            window.currentWriter.animateCharacter();
+            
+            // Animate characters sequentially
+            animateSequentially(0);
         }
     }, 100);
+}
+
+function animateSequentially(index) {
+    if (index < state.currentWriters.length) {
+        state.currentWriters[index].animateCharacter({
+            onComplete: () => animateSequentially(index + 1)
+        });
+    }
 }
 
 // Actions
@@ -326,14 +344,15 @@ window.startReviewFromLesson = function() {
 };
 
 window.replayStroke = function() {
-    if (window.currentWriter) {
-        window.currentWriter.animateCharacter();
+    if (state.currentWriters.length > 0) {
+        state.currentWriters.forEach(w => w.reset());
+        animateSequentially(0);
     }
 };
 
 window.resetStroke = function() {
-    if (window.currentWriter) {
-        window.currentWriter.reset();
+    if (state.currentWriters.length > 0) {
+        state.currentWriters.forEach(w => w.reset());
     }
 };
 
@@ -341,11 +360,17 @@ window.navigate = navigate;
 
 function updateNav() {
     document.querySelectorAll('.nav-item').forEach(item => {
-        const view = item.getAttribute('onclick').match(/'([^']+)'/)[1];
-        if (view === state.currentView || (view === 'home' && state.currentView === 'review')) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
+        const onclickAttr = item.getAttribute('onclick');
+        if (onclickAttr) {
+            const match = onclickAttr.match(/'([^']+)'/);
+            if (match) {
+                const view = match[1];
+                if (view === state.currentView || (view === 'home' && state.currentView === 'review')) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            }
         }
     });
 }
