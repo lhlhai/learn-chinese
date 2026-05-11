@@ -1,134 +1,1622 @@
 [
   {
-    "id": "v001",
-    "hanzi": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "tone_marks": [3, 3],
-    "example": "你好，我叫阮文安。",
-    "example_meaning": "Xin chào, tôi tên là Nguyễn Văn An.",
-    "lesson": "l001",
+    "id": "v1_001",
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "meaning": "Yêu",
+    "example": "我爱我的家。",
+    "example_meaning": "Tôi yêu gia đình tôi.",
     "hsk_level": 1
   },
   {
-    "id": "v002",
-    "hanzi": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "tone_marks": [4, 0],
-    "example": "谢谢你的帮助。",
-    "example_meaning": "Cảm ơn sự giúp đỡ của bạn.",
-    "lesson": "l001",
+    "id": "v1_002",
+    "hanzi": "八",
+    "pinyin": "bā",
+    "meaning": "Số 8",
+    "example": "他今年八岁了。",
+    "example_meaning": "Năm nay cậu ấy 8 tuổi.",
     "hsk_level": 1
   },
   {
-    "id": "v003",
-    "hanzi": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "tone_marks": [4, 4],
-    "example": "老师，再见！",
-    "example_meaning": "Thầy giáo, tạm biệt!",
-    "lesson": "l001",
-    "hsk_level": 1
-  },
-  {
-    "id": "v004",
-    "hanzi": "一",
-    "pinyin": "yī",
-    "meaning": "Số 1",
-    "tone_marks": [1],
-    "example": "我有一个哥哥。",
-    "example_meaning": "Tôi có một người anh trai.",
-    "lesson": "l002",
-    "hsk_level": 1
-  },
-  {
-    "id": "v005",
-    "hanzi": "二",
-    "pinyin": "èr",
-    "meaning": "Số 2",
-    "tone_marks": [2],
-    "example": "我有两个苹果。",
-    "example_meaning": "Tôi có hai quả táo.",
-    "lesson": "l002",
-    "hsk_level": 1
-  },
-  {
-    "id": "v006",
-    "hanzi": "三",
-    "pinyin": "sān",
-    "meaning": "Số 3",
-    "tone_marks": [1],
-    "example": "三月是春天。",
-    "example_meaning": "Tháng ba là mùa xuân.",
-    "lesson": "l002",
-    "hsk_level": 1
-  },
-  {
-    "id": "v007",
+    "id": "v1_003",
     "hanzi": "爸爸",
     "pinyin": "bàba",
     "meaning": "Bố",
-    "tone_marks": [4, 0],
     "example": "我爸爸是医生。",
     "example_meaning": "Bố tôi là bác sĩ.",
-    "lesson": "l003",
     "hsk_level": 1
   },
   {
-    "id": "v008",
-    "hanzi": "妈妈",
-    "pinyin": "māma",
-    "meaning": "Mẹ",
-    "tone_marks": [1, 0],
-    "example": "我妈妈很漂亮。",
-    "example_meaning": "Mẹ tôi rất đẹp.",
-    "lesson": "l003",
+    "id": "v1_004",
+    "hanzi": "杯子",
+    "pinyin": "bēizi",
+    "meaning": "Cái cốc",
+    "example": "桌子上有一个杯子。",
+    "example_meaning": "Trên bàn có một cái cốc.",
     "hsk_level": 1
   },
   {
-    "id": "v009",
-    "hanzi": "家",
-    "pinyin": "jiā",
-    "meaning": "Nhà, gia đình",
-    "tone_marks": [1],
-    "example": "我家在北京。",
-    "example_meaning": "Nhà tôi ở Bắc Kinh.",
-    "lesson": "l003",
+    "id": "v1_005",
+    "hanzi": "北京",
+    "pinyin": "Běijīng",
+    "meaning": "Bắc Kinh",
+    "example": "我住在北京。",
+    "example_meaning": "Tôi sống ở Bắc Kinh.",
     "hsk_level": 1
   },
   {
-    "id": "v010",
+    "id": "v1_006",
+    "hanzi": "本",
+    "pinyin": "běn",
+    "meaning": "Quyển, cuốn",
+    "example": "这本书很好看。",
+    "example_meaning": "Cuốn sách này rất hay.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_007",
+    "hanzi": "不客气",
+    "pinyin": "bú kèqi",
+    "meaning": "Đừng khách sáo",
+    "example": "谢谢你！不客气。",
+    "example_meaning": "Cảm ơn bạn! Đừng khách sáo.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_008",
+    "hanzi": "不",
+    "pinyin": "bù",
+    "meaning": "Không",
+    "example": "我不去学校。",
+    "example_meaning": "Tôi không đi học.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_009",
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "meaning": "Rau, món ăn",
+    "example": "妈妈做的菜很好吃。",
+    "example_meaning": "Món mẹ nấu rất ngon.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_010",
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "meaning": "Trà",
+    "example": "请喝茶。",
+    "example_meaning": "Mời uống trà.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_011",
     "hanzi": "吃",
     "pinyin": "chī",
     "meaning": "Ăn",
-    "tone_marks": [1],
     "example": "你想吃什么？",
     "example_meaning": "Bạn muốn ăn gì?",
-    "lesson": "l004",
     "hsk_level": 1
   },
   {
-    "id": "v011",
-    "hanzi": "米饭",
-    "pinyin": "mǐfàn",
-    "meaning": "Cơm",
-    "tone_marks": [3, 4],
-    "example": "我喜欢吃米饭。",
-    "example_meaning": "Tôi thích ăn cơm.",
-    "lesson": "l004",
+    "id": "v1_012",
+    "hanzi": "出租车",
+    "pinyin": "chūzūchē",
+    "meaning": "Xe taxi",
+    "example": "我们坐出租车去吧。",
+    "example_meaning": "Chúng ta đi bằng taxi nhé.",
     "hsk_level": 1
   },
   {
-    "id": "v012",
+    "id": "v1_013",
+    "hanzi": "打电话",
+    "pinyin": "dǎ diànhuà",
+    "meaning": "Gọi điện thoại",
+    "example": "他在打电话呢。",
+    "example_meaning": "Anh ấy đang gọi điện thoại.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_014",
+    "hanzi": "大",
+    "pinyin": "dà",
+    "meaning": "Lớn, to",
+    "example": "这个苹果很大。",
+    "example_meaning": "Quả táo này rất lớn.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_015",
+    "hanzi": "的",
+    "pinyin": "de",
+    "meaning": "Của",
+    "example": "这是我的书。",
+    "example_meaning": "Đây là sách của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_016",
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "meaning": "Giờ",
+    "example": "现在三点了。",
+    "example_meaning": "Bây giờ là 3 giờ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_017",
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "meaning": "Máy tính",
+    "example": "我买了一个新电脑。",
+    "example_meaning": "Tôi đã mua một cái máy tính mới.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_018",
+    "hanzi": "电视",
+    "pinyin": "diànshì",
+    "meaning": "Tivi",
+    "example": "我看电视呢。",
+    "example_meaning": "Tôi đang xem tivi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_019",
+    "hanzi": "电影",
+    "pinyin": "diànyǐng",
+    "meaning": "Phim",
+    "example": "我喜欢看电影。",
+    "example_meaning": "Tôi thích xem phim.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_020",
+    "hanzi": "东西",
+    "pinyin": "dōngxi",
+    "meaning": "Đồ vật",
+    "example": "他在商店买东西。",
+    "example_meaning": "Anh ấy đang mua đồ ở cửa hàng.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_021",
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "meaning": "Đều",
+    "example": "我们都是学生。",
+    "example_meaning": "Chúng tôi đều là học sinh.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_022",
+    "hanzi": "读",
+    "pinyin": "dú",
+    "meaning": "Đọc",
+    "example": "你会读这个字吗？",
+    "example_meaning": "Bạn biết đọc chữ này không?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_023",
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "meaning": "Xin lỗi",
+    "example": "对不起，我迟 do rồi。",
+    "example_meaning": "Xin lỗi, tôi đến muộn.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_024",
+    "hanzi": "多",
+    "pinyin": "duō",
+    "meaning": "Nhiều",
+    "example": "这里的人很多。",
+    "example_meaning": "Ở đây rất đông người.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_025",
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "meaning": "Bao nhiêu",
+    "example": "这个多少钱？",
+    "example_meaning": "Cái này bao nhiêu tiền?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_026",
+    "hanzi": "儿子",
+    "pinyin": "érzi",
+    "meaning": "Con trai",
+    "example": "我有两个儿子。",
+    "example_meaning": "Tôi có hai con trai.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_027",
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "Số 2",
+    "example": "现在两点二十分。",
+    "example_meaning": "Bây giờ là 2 giờ 20 phút.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_028",
+    "hanzi": "饭店",
+    "pinyin": "fàndiàn",
+    "meaning": "Khách sạn, nhà hàng",
+    "example": "我们在饭店吃饭。",
+    "example_meaning": "Chúng tôi ăn ở nhà hàng.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_029",
+    "hanzi": "飞机",
+    "pinyin": "fēijī",
+    "meaning": "Máy bay",
+    "example": "我坐飞机去北京。",
+    "example_meaning": "Tôi đi Bắc Kinh bằng máy bay.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_030",
+    "hanzi": "分钟",
+    "pinyin": "fēnzhōng",
+    "meaning": "Phút",
+    "example": "等我十分钟。",
+    "example_meaning": "Đợi tôi 10 phút.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_031",
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "meaning": "Vui vẻ",
+    "example": "认识你很高兴。",
+    "example_meaning": "Rất vui được làm quen với bạn.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_032",
+    "hanzi": "个",
+    "pinyin": "gè",
+    "meaning": "Cái, chiếc",
+    "example": "我有一个姐姐。",
+    "example_meaning": "Tôi có một người chị gái.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_033",
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "meaning": "Công việc",
+    "example": "他在医院工作。",
+    "example_meaning": "Anh ấy làm việc ở bệnh viện.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_034",
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "meaning": "Con chó",
+    "example": "那只狗很可爱。",
+    "example_meaning": "Con chó đó rất đáng yêu.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_035",
+    "hanzi": "汉语",
+    "pinyin": "Hànyǔ",
+    "meaning": "Tiếng Hán",
+    "example": "他在学汉语。",
+    "example_meaning": "Anh ấy đang học tiếng Hán.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_036",
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "meaning": "Tốt, ngon",
+    "example": "今天天气很好。",
+    "example_meaning": "Hôm nay thời tiết rất tốt.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_037",
     "hanzi": "喝",
     "pinyin": "hē",
     "meaning": "Uống",
-    "tone_marks": [1],
     "example": "我想喝水。",
     "example_meaning": "Tôi muốn uống nước.",
-    "lesson": "l004",
     "hsk_level": 1
+  },
+  {
+    "id": "v1_038",
+    "hanzi": "和",
+    "pinyin": "hé",
+    "meaning": "Và",
+    "example": "我和他是好朋友。",
+    "example_meaning": "Tôi và anh ấy là bạn thân.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_039",
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "meaning": "Rất",
+    "example": "我很好。",
+    "example_meaning": "Tôi rất khỏe.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_040",
+    "hanzi": "后面",
+    "pinyin": "hòumiàn",
+    "meaning": "Phía sau",
+    "example": "商店在学校后面。",
+    "example_meaning": "Cửa hàng ở phía sau trường học.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_041",
+    "hanzi": "回",
+    "pinyin": "huí",
+    "meaning": "Về",
+    "example": "我回家了。",
+    "example_meaning": "Tôi về nhà rồi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_042",
+    "hanzi": "会",
+    "pinyin": "huì",
+    "meaning": "Biết",
+    "example": "我会说汉语。",
+    "example_meaning": "Tôi biết nói tiếng Hán.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_043",
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "meaning": "Mấy",
+    "example": "你有几个苹果？",
+    "example_meaning": "Bạn có mấy quả táo?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_044",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "meaning": "Nhà",
+    "example": "我家在北京。",
+    "example_meaning": "Nhà tôi ở Bắc Kinh.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_045",
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "meaning": "Gọi là",
+    "example": "我叫王明。",
+    "example_meaning": "Tôi tên là Vương Minh.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_046",
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "Hôm nay",
+    "example": "今天星期一。",
+    "example_meaning": "Hôm nay là thứ hai.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_047",
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "meaning": "Số 9",
+    "example": "九月开学。",
+    "example_meaning": "Tháng chín khai giảng.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_048",
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "meaning": "Xem, nhìn",
+    "example": "我看书呢。",
+    "example_meaning": "Tôi đang đọc sách.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_049",
+    "hanzi": "看见",
+    "pinyin": "kànjiàn",
+    "meaning": "Nhìn thấy",
+    "example": "我看见他了。",
+    "example_meaning": "Tôi nhìn thấy anh ấy rồi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_050",
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "meaning": "Đồng (đơn vị tiền)",
+    "example": "这本书三十块钱。",
+    "example_meaning": "Cuốn sách này 30 tệ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_051",
+    "hanzi": "来",
+    "pinyin": "lái",
+    "meaning": "Đến",
+    "example": "他是来工作的。",
+    "example_meaning": "Anh ấy đến để làm việc.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_052",
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "meaning": "Giáo viên",
+    "example": "他是我的老师。",
+    "example_meaning": "Ông ấy là giáo viên của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_053",
+    "hanzi": "了",
+    "pinyin": "le",
+    "meaning": "Rồi",
+    "example": "我吃饭了。",
+    "example_meaning": "Tôi ăn cơm rồi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_054",
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "meaning": "Lạnh",
+    "example": "今天很冷。",
+    "example_meaning": "Hôm nay rất lạnh.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_055",
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "meaning": "Trong",
+    "example": "书在包里。",
+    "example_meaning": "Sách ở trong túi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_056",
+    "hanzi": "零",
+    "pinyin": "líng",
+    "meaning": "Số 0",
+    "example": "今年是二零二四年。",
+    "example_meaning": "Năm nay là năm 2024.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_057",
+    "hanzi": "六",
+    "pinyin": "liù",
+    "meaning": "Số 6",
+    "example": "我有六个苹果。",
+    "example_meaning": "Tôi có 6 quả táo.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_058",
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "meaning": "Mẹ",
+    "example": "我妈妈很漂亮。",
+    "example_meaning": "Mẹ tôi rất đẹp.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_059",
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "meaning": "Không? (câu hỏi)",
+    "example": "你是学生吗？",
+    "example_meaning": "Bạn là học sinh phải không?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_060",
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning": "Mua",
+    "example": "我买了一本书。",
+    "example_meaning": "Tôi đã mua một cuốn sách.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_061",
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "meaning": "Con mèo",
+    "example": "这只猫很小。",
+    "example_meaning": "Con mèo này rất nhỏ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_062",
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "meaning": "Không sao đâu",
+    "example": "对不起！没关系。",
+    "example_meaning": "Xin lỗi! Không sao đâu.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_063",
+    "hanzi": "没有",
+    "pinyin": "méiyǒu",
+    "meaning": "Không có",
+    "example": "我没有钱。",
+    "example_meaning": "Tôi không có tiền.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_064",
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "meaning": "Cơm",
+    "example": "我喜欢吃米饭。",
+    "example_meaning": "Tôi thích ăn cơm.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_065",
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "meaning": "Ngày mai",
+    "example": "明天见。",
+    "example_meaning": "Hẹn gặp lại ngày mai.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_066",
+    "hanzi": "名字",
+    "pinyin": "míngzi",
+    "meaning": "Tên",
+    "example": "你叫什么名字？",
+    "example_meaning": "Bạn tên là gì?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_067",
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "meaning": "Nào",
+    "example": "你是哪国人？",
+    "example_meaning": "Bạn là người nước nào?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_068",
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "meaning": "Ở đâu",
+    "example": "你在哪儿？",
+    "example_meaning": "Bạn ở đâu?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_069",
+    "hanzi": "那",
+    "pinyin": "nà",
+    "meaning": "Đó, kia",
+    "example": "那是我的老师。",
+    "example_meaning": "Đó là giáo viên của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_070",
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "meaning": "Thế còn",
+    "example": "你呢？",
+    "example_meaning": "Còn bạn thì sao?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_071",
+    "hanzi": "能",
+    "pinyin": "néng",
+    "meaning": "Có thể",
+    "example": "我能坐这儿吗？",
+    "example_meaning": "Tôi có thể ngồi đây không?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_072",
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "meaning": "Bạn",
+    "example": "你好！",
+    "example_meaning": "Chào bạn!",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_073",
+    "hanzi": "年",
+    "pinyin": "nián",
+    "meaning": "Năm",
+    "example": "我在中国住了三年。",
+    "example_meaning": "Tôi đã sống ở Trung Quốc 3 năm.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_074",
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "meaning": "Con gái",
+    "example": "他有三个女儿。",
+    "example_meaning": "Anh ấy có 3 con gái.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_075",
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "meaning": "Bạn bè",
+    "example": "他是我的好朋友。",
+    "example_meaning": "Anh ấy là bạn thân của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_076",
+    "hanzi": "漂亮",
+    "pinyin": "piàoliang",
+    "meaning": "Đẹp",
+    "example": "这个衣服很漂亮。",
+    "example_meaning": "Bộ quần áo này rất đẹp.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_077",
+    "hanzi": "苹果",
+    "pinyin": "píngguǒ",
+    "meaning": "Quả táo",
+    "example": "你想吃苹果吗？",
+    "example_meaning": "Bạn muốn ăn táo không?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_078",
+    "hanzi": "七",
+    "pinyin": "qī",
+    "meaning": "Số 7",
+    "example": "一个星期有七天。",
+    "example_meaning": "Một tuần có 7 ngày.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_079",
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "meaning": "Tiền",
+    "example": "我有钱。",
+    "example_meaning": "Tôi có tiền.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_080",
+    "hanzi": "前面",
+    "pinyin": "qiánmiàn",
+    "meaning": "Phía trước",
+    "example": "他在学校前面。",
+    "example_meaning": "Anh ấy ở phía trước trường học.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_081",
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "meaning": "Mời",
+    "example": "请坐。",
+    "example_meaning": "Mời ngồi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_082",
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning": "Đi",
+    "example": "我去商店。",
+    "example_meaning": "Tôi đi cửa hàng.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_083",
+    "hanzi": "热",
+    "pinyin": "rè",
+    "meaning": "Nóng",
+    "example": "今天很热。",
+    "example_meaning": "Hôm nay rất nóng.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_084",
+    "hanzi": "人",
+    "pinyin": "rén",
+    "meaning": "Người",
+    "example": "他是中国人。",
+    "example_meaning": "Anh ấy là người Trung Quốc.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_085",
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "meaning": "Quen biết",
+    "example": "我不认识他。",
+    "example_meaning": "Tôi không quen anh ấy.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_086",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning": "Số 3",
+    "example": "桌子上有三本书。",
+    "example_meaning": "Trên bàn có 3 cuốn sách.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_087",
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "meaning": "Cửa hàng",
+    "example": "我去商店买东西。",
+    "example_meaning": "Tôi đi cửa hàng mua đồ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_088",
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "meaning": "Trên",
+    "example": "书在桌子上。",
+    "example_meaning": "Sách ở trên bàn.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_089",
+    "hanzi": "上午",
+    "pinyin": "shàngwǔ",
+    "meaning": "Buổi sáng",
+    "example": "上午我去学校。",
+    "example_meaning": "Buổi sáng tôi đi học.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_090",
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "meaning": "Ít",
+    "example": "我的钱很少。",
+    "example_meaning": "Tôi có rất ít tiền.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_091",
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "meaning": "Ai",
+    "example": "他是谁？",
+    "example_meaning": "Anh ấy là ai?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_092",
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "meaning": "Cái gì",
+    "example": "你叫什么名字？",
+    "example_meaning": "Bạn tên là gì?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_093",
+    "hanzi": "十",
+    "pinyin": "shí",
+    "meaning": "Số 10",
+    "example": "我有十块钱。",
+    "example_meaning": "Tôi có 10 tệ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_094",
+    "hanzi": "时候",
+    "pinyin": "shíhou",
+    "meaning": "Lúc, khi",
+    "example": "你什么时候回国？",
+    "example_meaning": "Khi nào bạn về nước?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_095",
+    "hanzi": "是",
+    "pinyin": "shì",
+    "meaning": "Là",
+    "example": "我是老师。",
+    "example_meaning": "Tôi là giáo viên.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_096",
+    "hanzi": "书",
+    "pinyin": "shū",
+    "meaning": "Sách",
+    "example": "我看书呢。",
+    "example_meaning": "Tôi đang đọc sách.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_097",
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "meaning": "Nước",
+    "example": "我想喝水。",
+    "example_meaning": "Tôi muốn uống nước.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_098",
+    "hanzi": "水果",
+    "pinyin": "shuǐguǒ",
+    "meaning": "Hoa quả",
+    "example": "多吃水果对身体好。",
+    "example_meaning": "Ăn nhiều hoa quả tốt cho sức khỏe.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_099",
+    "hanzi": "睡觉",
+    "pinyin": "shuìjiào",
+    "meaning": "Đi ngủ",
+    "example": "他在睡觉呢。",
+    "example_meaning": "Anh ấy đang ngủ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_100",
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "meaning": "Nói",
+    "example": "你会说汉语吗？",
+    "example_meaning": "Bạn biết nói tiếng Hán không?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_101",
+    "hanzi": "说话",
+    "pinyin": "shuōhuà",
+    "meaning": "Nói chuyện",
+    "example": "他们在说话。",
+    "example_meaning": "Họ đang nói chuyện.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_102",
+    "hanzi": "四",
+    "pinyin": "sì",
+    "meaning": "Số 4",
+    "example": "我有四个苹果。",
+    "example_meaning": "Tôi có 4 quả táo.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_103",
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "meaning": "Tuổi",
+    "example": "他今年八岁了。",
+    "example_meaning": "Năm nay cậu ấy 8 tuổi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_104",
+    "hanzi": "他",
+    "pinyin": "tā",
+    "meaning": "Anh ấy",
+    "example": "他是我的朋友。",
+    "example_meaning": "Anh ấy là bạn của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_105",
+    "hanzi": "她",
+    "pinyin": "tā",
+    "meaning": "Cô ấy",
+    "example": "她是我的老师。",
+    "example_meaning": "Cô ấy là giáo viên của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_106",
+    "hanzi": "太",
+    "pinyin": "tài",
+    "meaning": "Quá",
+    "example": "太好了！",
+    "example_meaning": "Tốt quá rồi!",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_107",
+    "hanzi": "天气",
+    "pinyin": "tiānqì",
+    "meaning": "Thời tiết",
+    "example": "今天天气很好。",
+    "example_meaning": "Hôm nay thời tiết rất tốt.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_108",
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "meaning": "Nghe",
+    "example": "我听音乐呢。",
+    "example_meaning": "Tôi đang nghe nhạc.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_109",
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "meaning": "Bạn cùng học",
+    "example": "他们是我的同学。",
+    "example_meaning": "Họ là bạn cùng lớp của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_110",
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "meaning": "Alo",
+    "example": "喂，你好！",
+    "example_meaning": "Alo, xin chào!",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_111",
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "meaning": "Tôi",
+    "example": "我是学生。",
+    "example_meaning": "Tôi là học sinh.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_112",
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "meaning": "Chúng tôi",
+    "example": "我们都是中国人。",
+    "example_meaning": "Chúng tôi đều là người Trung Quốc.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_113",
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "meaning": "Số 5",
+    "example": "我有五块钱。",
+    "example_meaning": "Tôi có 5 tệ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_114",
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "meaning": "Thích",
+    "example": "我喜欢看电影。",
+    "example_meaning": "Tôi thích xem phim.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_115",
+    "hanzi": "下",
+    "pinyin": "xià",
+    "meaning": "Dưới",
+    "example": "猫在桌子下面。",
+    "example_meaning": "Con mèo ở dưới bàn.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_116",
+    "hanzi": "下午",
+    "pinyin": "xiàwǔ",
+    "meaning": "Buổi chiều",
+    "example": "下午我去商店。",
+    "example_meaning": "Buổi chiều tôi đi cửa hàng.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_117",
+    "hanzi": "下雨",
+    "pinyin": "xiàyǔ",
+    "meaning": "Mưa",
+    "example": "外面下雨了。",
+    "example_meaning": "Bên ngoài mưa rồi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_118",
+    "hanzi": "先生",
+    "pinyin": "xiānsheng",
+    "meaning": "Ông, ngài",
+    "example": "王先生在吗？",
+    "example_meaning": "Ông Vương có đó không?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_119",
+    "hanzi": "现在",
+    "pinyin": "xiànzài",
+    "meaning": "Bây giờ",
+    "example": "现在三点了。",
+    "example_meaning": "Bây giờ là 3 giờ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_120",
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "meaning": "Muốn, nghĩ",
+    "example": "我想喝水。",
+    "example_meaning": "Tôi muốn uống nước.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_121",
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "meaning": "Nhỏ",
+    "example": "这个苹果很小。",
+    "example_meaning": "Quả táo này rất nhỏ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_122",
+    "hanzi": "小姐",
+    "pinyin": "xiǎojiě",
+    "meaning": "Cô, tiểu thư",
+    "example": "李小姐在工作。",
+    "example_meaning": "Cô Lý đang làm việc.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_123",
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "meaning": "Một số, một vài",
+    "example": "这些书是我的。",
+    "example_meaning": "Những cuốn sách này là của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_124",
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "meaning": "Viết",
+    "example": "你会写这个字吗？",
+    "example_meaning": "Bạn biết viết chữ này không?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_125",
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "meaning": "Cảm ơn",
+    "example": "谢谢你！",
+    "example_meaning": "Cảm ơn bạn!",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_126",
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "meaning": "Tuần",
+    "example": "今天星期五。",
+    "example_meaning": "Hôm nay là thứ sáu.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_127",
+    "hanzi": "学生",
+    "pinyin": "xuésheng",
+    "meaning": "Học sinh",
+    "example": "我是学生。",
+    "example_meaning": "Tôi là học sinh.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_128",
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "meaning": "Học tập",
+    "example": "他在学习汉语。",
+    "example_meaning": "Anh ấy đang học tiếng Hán.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_129",
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "meaning": "Trường học",
+    "example": "我去学校。",
+    "example_meaning": "Tôi đi đến trường.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_130",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "Số 1",
+    "example": "我有一个苹果。",
+    "example_meaning": "Tôi có một quả táo.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_131",
+    "hanzi": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "meaning": "Một chút",
+    "example": "我会说一点儿汉语。",
+    "example_meaning": "Tôi biết nói một chút tiếng Hán.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_132",
+    "hanzi": "衣服",
+    "pinyin": "yīfu",
+    "meaning": "Quần áo",
+    "example": "我买了一件衣服。",
+    "example_meaning": "Tôi đã mua một bộ quần áo.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_133",
+    "hanzi": "医生",
+    "pinyin": "yīsheng",
+    "meaning": "Bác sĩ",
+    "example": "他是医生。",
+    "example_meaning": "Anh ấy là bác sĩ.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_134",
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "meaning": "Bệnh viện",
+    "example": "他在医院工作。",
+    "example_meaning": "Anh ấy làm việc ở bệnh viện.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_135",
+    "hanzi": "椅子",
+    "pinyin": "yǐzi",
+    "meaning": "Cái ghế",
+    "example": "桌子下面有一个椅子。",
+    "example_meaning": "Dưới bàn có một cái ghế.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_136",
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "meaning": "Có",
+    "example": "我有钱。",
+    "example_meaning": "Tôi có tiền.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_137",
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "meaning": "Tháng",
+    "example": "现在是三月。",
+    "example_meaning": "Bây giờ là tháng ba.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_138",
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "meaning": "Tạm biệt",
+    "example": "老师，再见！",
+    "example_meaning": "Thầy giáo, tạm biệt!",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_139",
+    "hanzi": "在",
+    "pinyin": "zài",
+    "meaning": "Ở",
+    "example": "我在家。",
+    "example_meaning": "Tôi ở nhà.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_140",
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "meaning": "Làm sao",
+    "example": "你怎么了？",
+    "example_meaning": "Bạn làm sao vậy?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_141",
+    "hanzi": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "meaning": "Như thế nào",
+    "example": "今天天气怎么样？",
+    "example_meaning": "Hôm nay thời tiết thế nào?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_142",
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "meaning": "Đây, này",
+    "example": "这是我的书。",
+    "example_meaning": "Đây là sách của tôi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_143",
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "meaning": "Trung Quốc",
+    "example": "我在中国学习。",
+    "example_meaning": "Tôi học tập ở Trung Quốc.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_144",
+    "hanzi": "中午",
+    "pinyin": "zhōngwǔ",
+    "meaning": "Buổi trưa",
+    "example": "中午我们在家吃饭。",
+    "example_meaning": "Buổi trưa chúng tôi ăn cơm ở nhà.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_145",
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "meaning": "Sống, ở",
+    "example": "你住在哪儿？",
+    "example_meaning": "Bạn sống ở đâu?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_146",
+    "hanzi": "桌子",
+    "pinyin": "zhuōzi",
+    "meaning": "Cái bàn",
+    "example": "书在桌子上。",
+    "example_meaning": "Sách ở trên bàn.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_147",
+    "hanzi": "字",
+    "pinyin": "zì",
+    "meaning": "Chữ",
+    "example": "这个字怎么写？",
+    "example_meaning": "Chữ này viết thế nào?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_148",
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "meaning": "Hôm qua",
+    "example": "昨天是星期四。",
+    "example_meaning": "Hôm qua là thứ năm.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_149",
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "meaning": "Ngồi",
+    "example": "请坐。",
+    "example_meaning": "Mời ngồi.",
+    "hsk_level": 1
+  },
+  {
+    "id": "v1_150",
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "meaning": "Làm",
+    "example": "你在做什么？",
+    "example_meaning": "Bạn đang làm gì?",
+    "hsk_level": 1
+  },
+  {
+    "id": "v2_001",
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "meaning": "Đi, nhé",
+    "example": "我们走吧。",
+    "example_meaning": "Chúng ta đi thôi.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_002",
+    "hanzi": "白",
+    "pinyin": "bái",
+    "meaning": "Trắng",
+    "example": "这件衣服是白的。",
+    "example_meaning": "Bộ quần áo này màu trắng.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_003",
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "meaning": "Trăm",
+    "example": "这里有一百个人。",
+    "example_meaning": "Ở đây có 100 người.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_004",
+    "hanzi": "帮助",
+    "pinyin": "bāngzhù",
+    "meaning": "Giúp đỡ",
+    "example": "谢谢你的帮助。",
+    "example_meaning": "Cảm ơn sự giúp đỡ của bạn.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_005",
+    "hanzi": "报纸",
+    "pinyin": "bàozhǐ",
+    "meaning": "Tờ báo",
+    "example": "他在看报纸。",
+    "example_meaning": "Anh ấy đang đọc báo.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_006",
+    "hanzi": "比",
+    "pinyin": "bǐ",
+    "meaning": "So với",
+    "example": "今天比昨天热。",
+    "example_meaning": "Hôm nay nóng hơn hôm qua.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_007",
+    "hanzi": "别",
+    "pinyin": "bié",
+    "meaning": "Đừng",
+    "example": "别说话。",
+    "example_meaning": "Đừng nói chuyện.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_008",
+    "hanzi": "长",
+    "pinyin": "cháng",
+    "meaning": "Dài",
+    "example": "这条路很长。",
+    "example_meaning": "Con đường này rất dài.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_009",
+    "hanzi": "唱歌",
+    "pinyin": "chànggē",
+    "meaning": "Hát",
+    "example": "她喜欢唱歌。",
+    "example_meaning": "Cô ấy thích hát.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_010",
+    "hanzi": "出",
+    "pinyin": "chū",
+    "meaning": "Ra",
+    "example": "他出去了。",
+    "example_meaning": "Anh ấy đi ra ngoài rồi.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_011",
+    "hanzi": "穿",
+    "pinyin": "chuān",
+    "meaning": "Mặc",
+    "example": "他穿着红色的衣服。",
+    "example_meaning": "Anh ấy đang mặc bộ quần áo màu đỏ.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_012",
+    "hanzi": "次",
+    "pinyin": "cì",
+    "meaning": "Lần",
+    "example": "我去过北京三次。",
+    "example_meaning": "Tôi đã đi Bắc Kinh 3 lần.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_013",
+    "hanzi": "从",
+    "pinyin": "cóng",
+    "meaning": "Từ",
+    "example": "我从家来学校。",
+    "example_meaning": "Tôi từ nhà đến trường.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_014",
+    "hanzi": "错",
+    "pinyin": "cuò",
+    "meaning": "Sai",
+    "example": "你错了。",
+    "example_meaning": "Bạn sai rồi.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_015",
+    "hanzi": "打篮球",
+    "pinyin": "dǎ lánqiú",
+    "meaning": "Đánh bóng rổ",
+    "example": "他每天打篮球。",
+    "example_meaning": "Anh ấy đánh bóng rổ mỗi ngày.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_016",
+    "hanzi": "大家",
+    "pinyin": "dàjiā",
+    "meaning": "Mọi người",
+    "example": "大家好！",
+    "example_meaning": "Chào mọi người!",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_017",
+    "hanzi": "到",
+    "pinyin": "dào",
+    "meaning": "Đến",
+    "example": "我到家了。",
+    "example_meaning": "Tôi về đến nhà rồi.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_018",
+    "hanzi": "得",
+    "pinyin": "de",
+    "meaning": "Trợ từ",
+    "example": "他说得很好。",
+    "example_meaning": "Anh ấy nói rất tốt.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_019",
+    "hanzi": "等",
+    "pinyin": "děng",
+    "meaning": "Đợi",
+    "example": "请等一下。",
+    "example_meaning": "Xin hãy đợi một chút.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_020",
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "meaning": "Em trai",
+    "example": "我有两个弟弟。",
+    "example_meaning": "Tôi có 2 em trai.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_021",
+    "hanzi": "第一",
+    "pinyin": "dì-yī",
+    "meaning": "Thứ nhất",
+    "example": "他是第一名。",
+    "example_meaning": "Anh ấy đứng thứ nhất.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_022",
+    "hanzi": "懂",
+    "pinyin": "dǒng",
+    "meaning": "Hiểu",
+    "example": "你听懂了吗？",
+    "example_meaning": "Bạn nghe hiểu không?",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_023",
+    "hanzi": "对",
+    "pinyin": "duì",
+    "meaning": "Đúng",
+    "example": "你说得对。",
+    "example_meaning": "Bạn nói đúng rồi.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_024",
+    "hanzi": "房间",
+    "pinyin": "fángjiān",
+    "meaning": "Phòng",
+    "example": "房间里没有人。",
+    "example_meaning": "Trong phòng không có ai.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_025",
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "meaning": "Rất, vô cùng",
+    "example": "我非常喜欢汉语。",
+    "example_meaning": "Tôi vô cùng thích tiếng Hán.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_026",
+    "hanzi": "服务员",
+    "pinyin": "fúwùyuán",
+    "meaning": "Nhân viên phục vụ",
+    "example": "服务员，请给我一杯水。",
+    "example_meaning": "Phục vụ, cho tôi một ly nước.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_027",
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "meaning": "Cao",
+    "example": "他长得很高。",
+    "example_meaning": "Anh ấy rất cao.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_028",
+    "hanzi": "告诉",
+    "pinyin": "gàosu",
+    "meaning": "Kể, bảo",
+    "example": "他告诉我一个秘密。",
+    "example_meaning": "Anh ấy kể cho tôi một bí mật.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_029",
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "meaning": "Anh trai",
+    "example": "我哥哥是老师。",
+    "example_meaning": "Anh trai tôi là giáo viên.",
+    "hsk_level": 2
+  },
+  {
+    "id": "v2_030",
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "meaning": "Cho",
+    "example": "请给我一本书。",
+    "example_meaning": "Cho tôi mượn một cuốn sách.",
+    "hsk_level": 2
   }
 ]

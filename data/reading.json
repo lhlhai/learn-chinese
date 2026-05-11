@@ -1,0 +1,42 @@
+[
+  {
+    "id": "r001",
+    "title": "Gia đình tôi",
+    "level": "HSK 1",
+    "content": "我家有三口人：爸爸、妈妈和我。我爸爸是医生，他工作很忙。我妈妈不工作，她在家里。我爱我的爸爸和妈妈。",
+    "pinyin": "Wǒ jiā yǒu sān kǒu rén: bàba, māma hé wǒ. Wǒ bàba shì yīshēng, tā gōngzuò hěn máng. Wǒ māma bù gōngzuò, tā zài jiālǐ. Wǒ ài wǒ de bàba hé māma.",
+    "translation": "Nhà tôi có 3 người: bố, mẹ và tôi. Bố tôi là bác sĩ, ông ấy làm việc rất bận rộn. Mẹ tôi không đi làm, bà ấy ở nhà. Tôi yêu bố và mẹ của tôi.",
+    "questions": [
+      {
+        "q": "Nhà tác giả có mấy người?",
+        "options": ["2 người", "3 người", "4 người"],
+        "answer": 1
+      },
+      {
+        "q": "Bố tác giả làm nghề gì?",
+        "options": ["Giáo viên", "Bác sĩ", "Nhân viên cửa hàng"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "r002",
+    "title": "Đi mua sắm",
+    "level": "HSK 2",
+    "content": "昨天下午，我和朋友去商店买东西。我买了一件衣服，三十块钱。我朋友买了一个杯子，八块钱。商店里的东西很多，也很漂亮。",
+    "pinyin": "Zuótiān xiàwǔ, wǒ hé péngyou qù shāngdiàn mǎi dōngxi. Wǒ mǎile yī jiàn yīfu, sānshí kuài qián. Wǒ péngyou mǎile yī gè bēizi, bā kuài qián. Shāngdiàn lǐ de dōngxi hěnduō, yě hěn piàoliang.",
+    "translation": "Chiều hôm qua, tôi và bạn đi cửa hàng mua đồ. Tôi đã mua một bộ quần áo, 30 tệ. Bạn tôi mua một cái cốc, 8 tệ. Đồ trong cửa hàng rất nhiều, cũng rất đẹp.",
+    "questions": [
+      {
+        "q": "Tác giả mua quần áo hết bao nhiêu tiền?",
+        "options": ["8 tệ", "30 tệ", "38 tệ"],
+        "answer": 1
+      },
+      {
+        "q": "Tác giả đi mua sắm khi nào?",
+        "options": ["Sáng nay", "Chiều hôm qua", "Tối hôm qua"],
+        "answer": 1
+      }
+    ]
+  }
+]

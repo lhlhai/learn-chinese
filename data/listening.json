@@ -1,0 +1,32 @@
+[
+  {
+    "id": "l001",
+    "title": "Hỏi đường",
+    "level": "HSK 2",
+    "audio_text": "请问，学校在哪儿？就在商店后面。",
+    "pinyin": "Qǐngwèn, xuéxiào zài nǎr? Jiù zài shāngdiàn hòumiàn.",
+    "translation": "Cho hỏi, trường học ở đâu? Ở ngay phía sau cửa hàng.",
+    "questions": [
+      {
+        "q": "Trường học ở đâu?",
+        "options": ["Phía trước cửa hàng", "Trong cửa hàng", "Phía sau cửa hàng"],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "l002",
+    "title": "Thời tiết hôm nay",
+    "level": "HSK 1",
+    "audio_text": "今天天气怎么样？太热了，我想喝水。",
+    "pinyin": "Jīntiān tiānqì zěnmeyàng? Tài rè le, wǒ xiǎng hē shuǐ.",
+    "translation": "Thời tiết hôm nay thế nào? Nóng quá rồi, tôi muốn uống nước.",
+    "questions": [
+      {
+        "q": "Thời tiết hôm nay thế nào?",
+        "options": ["Rất lạnh", "Rất nóng", "Không nóng"],
+        "answer": 1
+      }
+    ]
+  }
+]

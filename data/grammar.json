@@ -1,32 +1,397 @@
 [
   {
     "id": "g001",
-    "title": "Câu hỏi với '吗' (ma)",
-    "description": "Để biến một câu trần thuật thành câu hỏi Có/Không, chỉ cần thêm '吗' vào cuối câu.",
-    "structure": "Chủ ngữ + Động từ/Tính từ + 吗？",
+    "title": "吗 (ma)",
+    "description": "Câu hỏi có/không",
+    "structure": "S + V + O + 吗?",
     "examples": [
-      { "hanzi": "你好吗？", "pinyin": "Nǐ hǎo ma?", "vn": "Bạn khỏe không?" },
-      { "hanzi": "你是老师吗？", "pinyin": "Nǐ shì lǎoshī ma?", "vn": "Bạn là giáo viên phải không?" }
+      {
+        "hanzi": "你是学生吗？",
+        "pinyin": "nǐ shì xuésheng ma?",
+        "vn": "Bạn là học sinh phải không?"
+      }
     ]
   },
   {
     "id": "g002",
-    "title": "Phủ định với '不' (bù)",
-    "description": "'不' dùng để phủ định hành động trong hiện tại hoặc tương lai, hoặc phủ định tính chất.",
-    "structure": "Chủ ngữ + 不 + Động từ/Tính từ",
+    "title": "不 (bù)",
+    "description": "Phủ định cho hiện tại/tương lai",
+    "structure": "不 + V/Adj",
     "examples": [
-      { "hanzi": "我不吃米饭。", "pinyin": "Wǒ bù chī mǐfàn.", "vn": "Tôi không ăn cơm." },
-      { "hanzi": "他不高兴。", "pinyin": "Tā bù gāoxìng.", "vn": "Anh ấy không vui." }
+      {
+        "hanzi": "我不吃米饭。",
+        "pinyin": "wǒ bù chī mǐfàn.",
+        "vn": "Tôi không ăn cơm."
+      }
     ]
   },
   {
     "id": "g003",
-    "title": "Sở hữu với '的' (de)",
-    "description": "'的' dùng để nối định ngữ và trung tâm ngữ, biểu thị quan hệ sở hữu hoặc tính chất.",
-    "structure": "Người sở hữu + 的 + Vật sở hữu",
+    "title": "的 (de)",
+    "description": "Sở hữu cách",
+    "structure": "N1 + 的 + N2",
     "examples": [
-      { "hanzi": "我的书", "pinyin": "Wǒ de shū.", "vn": "Sách của tôi." },
-      { "hanzi": "老师的名字", "pinyin": "Lǎoshī de míngzi.", "vn": "Tên của thầy giáo." }
+      {
+        "hanzi": "这是我的书。",
+        "pinyin": "zhè shì wǒ de shū.",
+        "vn": "Đây là sách của tôi."
+      }
+    ]
+  },
+  {
+    "id": "g004",
+    "title": "很 (hěn)",
+    "description": "Trạng từ chỉ mức độ",
+    "structure": "S + 很 + Adj",
+    "examples": [
+      {
+        "hanzi": "我很好。",
+        "pinyin": "wǒ hěn hǎo.",
+        "vn": "Tôi rất khỏe."
+      }
+    ]
+  },
+  {
+    "id": "g005",
+    "title": "太...了 (tài...le)",
+    "description": "Quá... rồi",
+    "structure": "太 + Adj + 了",
+    "examples": [
+      {
+        "hanzi": "太好了！",
+        "pinyin": "tài hǎo le!",
+        "vn": "Tốt quá rồi!"
+      }
+    ]
+  },
+  {
+    "id": "g006",
+    "title": "在 (zài)",
+    "description": "Đang làm gì hoặc ở đâu",
+    "structure": "S + 在 + Place / S + 在 + V",
+    "examples": [
+      {
+        "hanzi": "我在家。",
+        "pinyin": "wǒ zài jiā.",
+        "vn": "Tôi ở nhà."
+      },
+      {
+        "hanzi": "他在睡觉。",
+        "pinyin": "tā zài shuìjiào.",
+        "vn": "Anh ấy đang ngủ."
+      }
+    ]
+  },
+  {
+    "id": "g007",
+    "title": "有 (yǒu)",
+    "description": "Có",
+    "structure": "S + 有 + Obj",
+    "examples": [
+      {
+        "hanzi": "我有钱。",
+        "pinyin": "wǒ yǒu qián.",
+        "vn": "Tôi có tiền."
+      }
+    ]
+  },
+  {
+    "id": "g008",
+    "title": "没有 (méiyǒu)",
+    "description": "Không có / Phủ định quá khứ",
+    "structure": "S + 没有 + Obj / S + 没有 + V",
+    "examples": [
+      {
+        "hanzi": "我 ho có tiền。",
+        "pinyin": "wǒ méiyǒu qián.",
+        "vn": "Tôi không có tiền."
+      }
+    ]
+  },
+  {
+    "id": "g009",
+    "title": "和 (hé)",
+    "description": "Và (nối danh từ)",
+    "structure": "N1 + 和 + N2",
+    "examples": [
+      {
+        "hanzi": "我和他是朋友。",
+        "pinyin": "wǒ hé tā shì péngyou.",
+        "vn": "Tôi và anh ấy là bạn."
+      }
+    ]
+  },
+  {
+    "id": "g010",
+    "title": "几 (jǐ)",
+    "description": "Mấy (hỏi số lượng < 10)",
+    "structure": "几 + Lượng từ + N?",
+    "examples": [
+      {
+        "hanzi": "你有几个苹果？",
+        "pinyin": "nǐ yǒu jǐ gè píngguǒ?",
+        "vn": "Bạn có mấy quả táo?"
+      }
+    ]
+  },
+  {
+    "id": "g011",
+    "title": "多少 (duōshao)",
+    "description": "Bao nhiêu (hỏi số lượng > 10)",
+    "structure": "多少 + N?",
+    "examples": [
+      {
+        "hanzi": "这里有多少人？",
+        "pinyin": "zhèli yǒu duōshao rén?",
+        "vn": "Ở đây có bao nhiêu người?"
+      }
+    ]
+  },
+  {
+    "id": "g012",
+    "title": "去 (qù)",
+    "description": "Đi đâu làm gì",
+    "structure": "S + 去 + Place + V",
+    "examples": [
+      {
+        "hanzi": "我去商店买东西。",
+        "pinyin": "wǒ qù shāngdiàn mǎi dōngxi.",
+        "vn": "Tôi đi cửa hàng mua đồ."
+      }
+    ]
+  },
+  {
+    "id": "g013",
+    "title": "想 (xiǎng)",
+    "description": "Muốn",
+    "structure": "S + 想 + V",
+    "examples": [
+      {
+        "hanzi": "我想喝茶。",
+        "pinyin": "wǒ xiǎng hē chá.",
+        "vn": "Tôi muốn uống trà."
+      }
+    ]
+  },
+  {
+    "id": "g014",
+    "title": "会 (huì)",
+    "description": "Biết (qua học tập)",
+    "structure": "S + 会 + V",
+    "examples": [
+      {
+        "hanzi": "我会说汉语。",
+        "pinyin": "wǒ huì shuō Hànyǔ.",
+        "vn": "Tôi biết nói tiếng Hán."
+      }
+    ]
+  },
+  {
+    "id": "g015",
+    "title": "能 (néng)",
+    "description": "Có thể (khả năng/cho phép)",
+    "structure": "S + 能 + V",
+    "examples": [
+      {
+        "hanzi": "我能坐这儿吗？",
+        "pinyin": "wǒ néng zuò zhèr ma?",
+        "vn": "Tôi có thể ngồi đây không?"
+      }
+    ]
+  },
+  {
+    "id": "g016",
+    "title": "叫 (jiào)",
+    "description": "Tên là / Gọi là",
+    "structure": "S + 叫 + Name",
+    "examples": [
+      {
+        "hanzi": "我叫王明。",
+        "pinyin": "wǒ jiào Wáng Míng.",
+        "vn": "Tôi tên là Vương Minh."
+      }
+    ]
+  },
+  {
+    "id": "g017",
+    "title": "什么 (shénme)",
+    "description": "Cái gì",
+    "structure": "S + V + 什么 (+ N)?",
+    "examples": [
+      {
+        "hanzi": "你叫什么名字？",
+        "pinyin": "nǐ jiào shénme míngzi?",
+        "vn": "Bạn tên là gì?"
+      }
+    ]
+  },
+  {
+    "id": "g018",
+    "title": "哪 (nǎ)",
+    "description": "Nào",
+    "structure": "哪 + Lượng từ + N?",
+    "examples": [
+      {
+        "hanzi": "你是哪国人？",
+        "pinyin": "nǐ shì nǎ guó rén?",
+        "vn": "Bạn là người nước nào?"
+      }
+    ]
+  },
+  {
+    "id": "g019",
+    "title": "哪儿 (nǎr)",
+    "description": "Ở đâu",
+    "structure": "S + 在 + 哪儿?",
+    "examples": [
+      {
+        "hanzi": "你在哪儿？",
+        "pinyin": "nǐ zài nǎr?",
+        "vn": "Bạn ở đâu?"
+      }
+    ]
+  },
+  {
+    "id": "g020",
+    "title": "谁 (shéi)",
+    "description": "Ai",
+    "structure": "谁 + V + O? / S + 是 + 谁?",
+    "examples": [
+      {
+        "hanzi": "他是谁？",
+        "pinyin": "tā shì shéi?",
+        "vn": "Anh ấy là ai?"
+      }
+    ]
+  },
+  {
+    "id": "g021",
+    "title": "怎么样 (zěnmeyàng)",
+    "description": "Như thế nào",
+    "structure": "S + 怎么样?",
+    "examples": [
+      {
+        "hanzi": "今天天气怎么样？",
+        "pinyin": "jīntiān tiānqì zěnmeyàng?",
+        "vn": "Hôm nay thời tiết thế nào?"
+      }
+    ]
+  },
+  {
+    "id": "g022",
+    "title": "什么时候 (shíhou)",
+    "description": "Khi nào",
+    "structure": "S + 什么时候 + V?",
+    "examples": [
+      {
+        "hanzi": "你什么时候回家？",
+        "pinyin": "nǐ shénme shíhou huí jiā?",
+        "vn": "Khi nào bạn về nhà?"
+      }
+    ]
+  },
+  {
+    "id": "g023",
+    "title": "多少钱 (duōshao qián)",
+    "description": "Bao nhiêu tiền",
+    "structure": "S + 多少钱?",
+    "examples": [
+      {
+        "hanzi": "这个多少钱？",
+        "pinyin": "zhège duōshao qián?",
+        "vn": "Cái này bao nhiêu tiền?"
+      }
+    ]
+  },
+  {
+    "id": "g024",
+    "title": "多 (duō) + Adj",
+    "description": "Hỏi về mức độ (bao nhiêu)",
+    "structure": "S + 多 + Adj?",
+    "examples": [
+      {
+        "hanzi": "你多大？",
+        "pinyin": "nǐ duō dà?",
+        "vn": "Bạn bao nhiêu tuổi?"
+      }
+    ]
+  },
+  {
+    "id": "g025",
+    "title": "了 (le)",
+    "description": "Thay đổi trạng thái / Hoàn thành",
+    "structure": "S + V + 了 / S + Adj + 了",
+    "examples": [
+      {
+        "hanzi": "我吃饭了。",
+        "pinyin": "wǒ chīfàn le.",
+        "vn": "Tôi ăn cơm rồi."
+      }
+    ]
+  },
+  {
+    "id": "g026",
+    "title": "比 (bǐ)",
+    "description": "So sánh",
+    "structure": "A + 比 + B + Adj",
+    "examples": [
+      {
+        "hanzi": "今天比昨天热。",
+        "pinyin": "jīntiān bǐ zuótiān rè.",
+        "vn": "Hôm nay nóng hơn hôm qua."
+      }
+    ]
+  },
+  {
+    "id": "g027",
+    "title": "从 (cóng)...到 (dào)",
+    "description": "Từ... đến",
+    "structure": "从 A 到 B",
+    "examples": [
+      {
+        "hanzi": "从我家到学校很远。",
+        "pinyin": "cóng wǒ jiā dào xuéxiào hěn yuǎn.",
+        "vn": "Từ nhà tôi đến trường rất xa."
+      }
+    ]
+  },
+  {
+    "id": "g028",
+    "title": "正在 (zhèngzài)",
+    "description": "Đang (hành động đang diễn ra)",
+    "structure": "S + 正在 + V",
+    "examples": [
+      {
+        "hanzi": "他正在看书。",
+        "pinyin": "tā zhèngzài kànshū.",
+        "vn": "Anh ấy đang đọc sách."
+      }
+    ]
+  },
+  {
+    "id": "g029",
+    "title": "因为...所以 (yīnwèi...suǒyǐ)",
+    "description": "Vì... nên",
+    "structure": "因为... 所以...",
+    "examples": [
+      {
+        "hanzi": "因为天气不好，所以我不去。",
+        "pinyin": "yīnwèi tiānqì bù hǎo, suǒyǐ wǒ bù qù.",
+        "vn": "Vì thời tiết không tốt nên tôi không đi."
+      }
+    ]
+  },
+  {
+    "id": "g030",
+    "title": "虽然...但是 (suīrán...dànshì)",
+    "description": "Mặc dù... nhưng",
+    "structure": "虽然... 但是...",
+    "examples": [
+      {
+        "hanzi": "虽然汉字很难，但是很有趣。",
+        "pinyin": "suīrán hànzì hěn nán, dànshì hěn yǒuqù.",
+        "vn": "Mặc dù chữ Hán khó nhưng rất thú vị."
+      }
     ]
   }
 ]

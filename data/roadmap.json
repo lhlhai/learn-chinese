@@ -1,0 +1,46 @@
+[
+  {
+    "month": "Tháng 5-6",
+    "title": "Giai đoạn 1: Nền tảng",
+    "goal": "Hoàn thành HSK 1",
+    "tasks": [
+      "Học 150 từ vựng HSK 1",
+      "Nắm vững Pinyin và quy tắc viết",
+      "Giao tiếp cơ bản: chào hỏi, giới thiệu bản thân"
+    ],
+    "status": "in-progress"
+  },
+  {
+    "month": "Tháng 7-8",
+    "title": "Giai đoạn 2: Mở rộng",
+    "goal": "Hoàn thành HSK 2",
+    "tasks": [
+      "Học thêm 150 từ vựng HSK 2 (Tổng 300)",
+      "Sử dụng các cấu trúc so sánh, thời gian",
+      "Đọc hiểu các đoạn văn ngắn 100 chữ"
+    ],
+    "status": "pending"
+  },
+  {
+    "month": "Tháng 9-10",
+    "title": "Giai đoạn 3: Tăng tốc",
+    "goal": "Tiếp cận HSK 3",
+    "tasks": [
+      "Học thêm 300 từ vựng HSK 3 (Tổng 600)",
+      "Luyện nghe hiểu hội thoại thực tế",
+      "Viết đoạn văn ngắn về sở thích, công việc"
+    ],
+    "status": "pending"
+  },
+  {
+    "month": "Tháng 11-12",
+    "title": "Giai đoạn 4: Về đích",
+    "goal": "Đạt trình độ HSK 3",
+    "tasks": [
+      "Ôn tập toàn bộ 600 từ vựng",
+      "Luyện đề thi mô phỏng HSK 3",
+      "Giao tiếp tự tin các chủ đề thông dụng"
+    ],
+    "status": "pending"
+  }
+]

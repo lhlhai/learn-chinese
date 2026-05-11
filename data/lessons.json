@@ -1,42 +1,312 @@
 [
   {
     "id": "l001",
-    "title": "Chào hỏi cơ bản",
+    "title": "Bài học số 1",
     "phase": 1,
-    "vocab_ids": ["v001", "v002", "v003"],
+    "vocab_ids": [
+      "v1_001",
+      "v1_002",
+      "v1_003",
+      "v1_004",
+      "v1_005",
+      "v1_006",
+      "v1_007",
+      "v1_008",
+      "v1_009",
+      "v1_010"
+    ],
     "dialogue": [
-      { "speaker": "A", "hanzi": "你好！", "pinyin": "Nǐ hǎo!", "vn": "Xin chào!" },
-      { "speaker": "B", "hanzi": "你好！你叫什么名字？", "pinyin": "Nǐ hǎo! Nǐ jiào shénme míngzi?", "vn": "Xin chào! Bạn tên là gì?" }
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
     ]
   },
   {
     "id": "l002",
-    "title": "Số đếm cơ bản",
+    "title": "Bài học số 2",
     "phase": 1,
-    "vocab_ids": ["v004", "v005", "v006"],
+    "vocab_ids": [
+      "v1_011",
+      "v1_012",
+      "v1_013",
+      "v1_014",
+      "v1_015",
+      "v1_016",
+      "v1_017",
+      "v1_018",
+      "v1_019",
+      "v1_020"
+    ],
     "dialogue": [
-      { "speaker": "A", "hanzi": "你有几个苹果？", "pinyin": "Nǐ yǒu jǐ gè píngguǒ?", "vn": "Bạn có mấy quả táo?" },
-      { "speaker": "B", "hanzi": "我有三个苹果。", "pinyin": "Wǒ yǒu sān gè píngguǒ.", "vn": "Tôi có ba quả táo." }
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
     ]
   },
   {
     "id": "l003",
-    "title": "Gia đình của tôi",
+    "title": "Bài học số 3",
     "phase": 1,
-    "vocab_ids": ["v007", "v008", "v009"],
+    "vocab_ids": [
+      "v1_021",
+      "v1_022",
+      "v1_023",
+      "v1_024",
+      "v1_025",
+      "v1_026",
+      "v1_027",
+      "v1_028",
+      "v1_029",
+      "v1_030"
+    ],
     "dialogue": [
-      { "speaker": "A", "hanzi": "你家有几口人？", "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?", "vn": "Nhà bạn có mấy người?" },
-      { "speaker": "B", "hanzi": "我家 có ba người: 爸爸，妈妈和我。", "pinyin": "Wǒ jiā yǒu sān kǒu rén: bàba, māma hé wǒ.", "vn": "Nhà tôi có ba người: bố, mẹ và tôi." }
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
     ]
   },
   {
     "id": "l004",
-    "title": "Ăn uống",
+    "title": "Bài học số 4",
     "phase": 1,
-    "vocab_ids": ["v010", "v011", "v012"],
+    "vocab_ids": [
+      "v1_031",
+      "v1_032",
+      "v1_033",
+      "v1_034",
+      "v1_035",
+      "v1_036",
+      "v1_037",
+      "v1_038",
+      "v1_039",
+      "v1_040"
+    ],
     "dialogue": [
-      { "speaker": "A", "hanzi": "你想吃什么？", "pinyin": "Nǐ xiǎng chī shénme?", "vn": "Bạn muốn ăn gì?" },
-      { "speaker": "B", "hanzi": "我想吃米饭，喝茶。", "pinyin": "Wǒ xiǎng chī mǐfàn, hē chá.", "vn": "Tôi muốn ăn cơm, uống trà." }
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
+    ]
+  },
+  {
+    "id": "l005",
+    "title": "Bài học số 5",
+    "phase": 1,
+    "vocab_ids": [
+      "v1_041",
+      "v1_042",
+      "v1_043",
+      "v1_044",
+      "v1_045",
+      "v1_046",
+      "v1_047",
+      "v1_048",
+      "v1_049",
+      "v1_050"
+    ],
+    "dialogue": [
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
+    ]
+  },
+  {
+    "id": "l006",
+    "title": "Bài học số 6",
+    "phase": 2,
+    "vocab_ids": [
+      "v1_051",
+      "v1_052",
+      "v1_053",
+      "v1_054",
+      "v1_055",
+      "v1_056",
+      "v1_057",
+      "v1_058",
+      "v1_059",
+      "v1_060"
+    ],
+    "dialogue": [
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
+    ]
+  },
+  {
+    "id": "l007",
+    "title": "Bài học số 7",
+    "phase": 2,
+    "vocab_ids": [
+      "v1_061",
+      "v1_062",
+      "v1_063",
+      "v1_064",
+      "v1_065",
+      "v1_066",
+      "v1_067",
+      "v1_068",
+      "v1_069",
+      "v1_070"
+    ],
+    "dialogue": [
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
+    ]
+  },
+  {
+    "id": "l008",
+    "title": "Bài học số 8",
+    "phase": 2,
+    "vocab_ids": [
+      "v1_071",
+      "v1_072",
+      "v1_073",
+      "v1_074",
+      "v1_075",
+      "v1_076",
+      "v1_077",
+      "v1_078",
+      "v1_079",
+      "v1_080"
+    ],
+    "dialogue": [
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
+    ]
+  },
+  {
+    "id": "l009",
+    "title": "Bài học số 9",
+    "phase": 2,
+    "vocab_ids": [
+      "v1_081",
+      "v1_082",
+      "v1_083",
+      "v1_084",
+      "v1_085",
+      "v1_086",
+      "v1_087",
+      "v1_088",
+      "v1_089",
+      "v1_090"
+    ],
+    "dialogue": [
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
+    ]
+  },
+  {
+    "id": "l010",
+    "title": "Bài học số 10",
+    "phase": 2,
+    "vocab_ids": [
+      "v1_091",
+      "v1_092",
+      "v1_093",
+      "v1_094",
+      "v1_095",
+      "v1_096",
+      "v1_097",
+      "v1_098",
+      "v1_099",
+      "v1_100"
+    ],
+    "dialogue": [
+      {
+        "speaker": "A",
+        "hanzi": "你好！",
+        "pinyin": "nǐ hǎo!",
+        "vn": "Chào bạn!"
+      },
+      {
+        "speaker": "B",
+        "hanzi": "你好！认识你很高兴。",
+        "pinyin": "nǐ hǎo! rènshi nǐ hěn gāoxìng.",
+        "vn": "Chào bạn! Rất vui được quen biết bạn."
+      }
     ]
   }
 ]

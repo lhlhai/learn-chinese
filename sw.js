@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chinese-pwa-v3';
+const CACHE_NAME = 'chinese-pwa-v4';
 const ASSETS = [
     './',
     './index.html',
@@ -9,6 +9,9 @@ const ASSETS = [
     './data/vocab.json',
     './data/lessons.json',
     './data/grammar.json',
+    './data/reading.json',
+    './data/listening.json',
+    './data/roadmap.json',
     './assets/icons/icon-192.png',
     './assets/icons/icon-512.png'
 ];

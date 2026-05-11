@@ -283,3 +283,108 @@ nav {
 .stroke-btn:active {
     transform: scale(0.95);
 }
+
+/* Roadmap Styles */
+.roadmap-item {
+    border-left: 3px solid var(--primary);
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.roadmap-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.roadmap-month {
+    font-weight: bold;
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+
+.roadmap-status {
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: var(--secondary);
+    margin-left: 10px;
+}
+
+/* Speaking Feature */
+.mic-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(230, 57, 70, 0.4);
+}
+
+.mic-btn.recording {
+    animation: pulse 1.5s infinite;
+    background: #ff4d4d;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7); }
+    70% { transform: scale(1.1); box-shadow: 0 0 0 15px rgba(230, 57, 70, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
+}
+
+.recognition-result {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+}
+
+/* Reading & Listening */
+.passage-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.question-card {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+}
+
+.option-btn.correct {
+    background: #2a9d8f;
+    border-color: #2a9d8f;
+}
+
+.option-btn.wrong {
+    background: #e76f51;
+    border-color: #e76f51;
+}
