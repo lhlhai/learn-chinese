@@ -11,6 +11,7 @@ const CONFIG = {
 const state = {
     vocab: [],
     lessons: [],
+    lessonsNew: [], // Bộ hình & Bộ thanh
     grammar: [],
     reading: [],
     listening: [],
@@ -26,15 +27,17 @@ const state = {
     practiceWord: null,
     currentWriters: [],
     isRecording: false,
-    recognition: null
+    recognition: null,
+    learningMode: 'traditional' // 'traditional' hoặc 'radical_phonetic'
 };
 
 // Initialize App
 async function init() {
     try {
-        const [vocabRes, lessonsRes, grammarRes, readingRes, listeningRes, roadmapRes] = await Promise.all([
+        const [vocabRes, lessonsRes, lessonsNewRes, grammarRes, readingRes, listeningRes, roadmapRes] = await Promise.all([
             fetch('data/vocab.json'),
             fetch('data/lessons.json'),
+            fetch('data/lessons_new.json'),
             fetch('data/grammar.json'),
             fetch('data/reading.json'),
             fetch('data/listening.json'),
@@ -42,6 +45,7 @@ async function init() {
         ]);
         state.vocab = await vocabRes.json();
         state.lessons = await lessonsRes.json();
+        state.lessonsNew = await lessonsNewRes.json();
         state.grammar = await grammarRes.json();
         state.reading = await readingRes.json();
         state.listening = await listeningRes.json();
@@ -187,6 +191,7 @@ function render() {
         case 'listening_detail': renderListeningDetail(main); break;
         case 'speaking_practice': renderSpeakingPractice(main); break;
         case 'roadmap': renderRoadmap(main); break;
+        case 'learning_mode': renderLearningMode(main); break;
     }
     updateNav();
 }
@@ -204,6 +209,13 @@ function renderHome(container) {
             <button class="btn" onclick="startReview()">Bắt đầu ôn tập</button>
         </div>
         <div class="card">
+            <h3>Chọn kiểu học</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 1rem;">
+                <button class="btn btn-secondary" onclick="navigate('learning_mode')">📚 Chế độ học</button>
+                <button class="btn btn-secondary" onclick="navigate('practice_menu')">🎯 Luyện tập</button>
+            </div>
+        </div>
+        <div class="card">
             <h3>Kỹ năng hôm nay</h3>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 1rem;">
                 <button class="btn btn-secondary" onclick="navigate('speaking_practice')">🗣️ Luyện nói</button>
@@ -211,6 +223,21 @@ function renderHome(container) {
                 <button class="btn btn-secondary" onclick="navigate('reading_list')">📖 Đọc hiểu</button>
                 <button class="btn btn-secondary" onclick="navigate('roadmap')">🗺️ Lộ trình</button>
             </div>
+        </div>
+    `;
+}
+
+function renderLearningMode(container) {
+    container.innerHTML = `
+        <button class="btn btn-secondary" style="width: auto; margin-bottom: 1rem;" onclick="navigate('home')">← Quay lại</button>
+        <h2>Chọn kiểu học</h2>
+        <div class="card" onclick="state.learningMode = 'traditional'; navigate('list')">
+            <h3>📖 Học theo bài</h3>
+            <p>Học từ vựng theo các bài học có tổ chức theo chủ đề.</p>
+        </div>
+        <div class="card" onclick="state.learningMode = 'radical_phonetic'; navigate('list')">
+            <h3>🔤 Học theo Bộ hình & Bộ thanh</h3>
+            <p>Học từ vựng theo bộ thủ (radical) và bộ thanh (phonetic) để nhớ lâu hơn.</p>
         </div>
     `;
 }
@@ -395,7 +422,6 @@ window.toggleTranslation = function() {
     el.classList.toggle('hidden');
 };
 
-// Existing logic from app.js (adapted)
 window.flipCard = function() { state.isFlipped = !state.isFlipped; render(); };
 window.handleSRS = function(success) {
     const word = state.reviewQueue[state.currentCardIndex];
@@ -414,7 +440,7 @@ window.startReview = function() {
     else alert('Không có từ nào cần ôn tập hôm nay!');
 };
 
-// Hanzi Writer Integration (adapted)
+// Hanzi Writer Integration - Luyện viết (GIỮ NGUYÊN)
 function renderStrokeOrder(container) {
     const word = state.practiceWord;
     const characters = Array.from(word.hanzi);
@@ -467,8 +493,13 @@ function renderGrammar(container) {
 
 function renderLessonList(container) {
     let html = '<h2>Danh sách bài học</h2>';
-    state.lessons.forEach(lesson => {
-        html += `<div class="lesson-item" onclick="navigate('lesson', ${JSON.stringify(lesson).replace(/"/g, '&quot;')})"><div class="lesson-info"><h3>${lesson.title}</h3><p>${lesson.vocab_ids.length} từ vựng</p></div><span>➔</span></div>`;
+    
+    // Chọn danh sách bài học dựa trên chế độ học
+    const lessons = state.learningMode === 'radical_phonetic' ? state.lessonsNew : state.lessons;
+    
+    lessons.forEach(lesson => {
+        const type = lesson.type ? ` (${lesson.type === 'radical' ? 'Bộ hình' : 'Bộ thanh'})` : '';
+        html += `<div class="lesson-item" onclick="navigate('lesson', ${JSON.stringify(lesson).replace(/"/g, '&quot;')})"><div class="lesson-info"><h3>${lesson.title}${type}</h3><p>${lesson.vocab_ids.length} từ vựng</p></div><span>➔</span></div>`;
     });
     container.innerHTML = html;
 }
@@ -476,7 +507,19 @@ function renderLessonList(container) {
 function renderLesson(container) {
     const lesson = state.currentLesson;
     const vocab = state.vocab.filter(v => lesson.vocab_ids.includes(v.id));
-    let html = `<button class="btn btn-secondary" style="width: auto; margin-bottom: 1rem;" onclick="navigate('home')">← Quay lại</button><h2>${lesson.title}</h2><div class="card"><h3>Hội thoại</h3>${lesson.dialogue.map(d => `<div class="dialogue-line" onclick="speak('${d.hanzi}')"><span class="speaker">${d.speaker}:</span><span class="hanzi-sm">${d.hanzi}</span><br><small>${d.pinyin}</small><br><small style="color: #888">${d.vn}</small></div>`).join('')}</div><h3>Từ vựng</h3>${vocab.map(v => `<div class="card"><div style="display: flex; justify-content: space-between; align-items: center;"><div onclick="speak('${v.hanzi}')" style="flex: 1; cursor: pointer;"><span style="font-size: 1.5rem; font-weight: bold;">${v.hanzi}</span><span style="color: var(--accent); margin-left: 10px;">${v.pinyin}</span></div><span onclick="speak('${v.hanzi}')" style="cursor: pointer; font-size: 1.2rem;">🔊</span></div><p>${v.meaning}</p><button class="btn btn-secondary" style="width: auto; margin-top: 0.5rem; font-size: 0.8rem;" onclick="navigate('practice', ${JSON.stringify(v).replace(/"/g, '&quot;')})">✍️ Luyện viết</button></div>`).join('')}<button class="btn" onclick="startReviewFromLesson()">Ôn tập bài này</button>`;
+    const typeLabel = lesson.type ? (lesson.type === 'radical' ? '(Bộ hình)' : '(Bộ thanh)') : '';
+    
+    let html = `<button class="btn btn-secondary" style="width: auto; margin-bottom: 1rem;" onclick="navigate('home')">← Quay lại</button><h2>${lesson.title} ${typeLabel}</h2>`;
+    
+    if (lesson.description) {
+        html += `<div class="card"><p>${lesson.description}</p></div>`;
+    }
+    
+    if (lesson.dialogue) {
+        html += `<div class="card"><h3>Hội thoại</h3>${lesson.dialogue.map(d => `<div class="dialogue-line" onclick="speak('${d.hanzi}')"><span class="speaker">${d.speaker}:</span><span class="hanzi-sm">${d.hanzi}</span><br><small>${d.pinyin}</small><br><small style="color: #888">${d.vn}</small></div>`).join('')}</div>`;
+    }
+    
+    html += `<h3>Từ vựng</h3>${vocab.map(v => `<div class="card"><div style="display: flex; justify-content: space-between; align-items: center;"><div onclick="speak('${v.hanzi}')" style="flex: 1; cursor: pointer;"><span style="font-size: 1.5rem; font-weight: bold;">${v.hanzi}</span><span style="color: var(--accent); margin-left: 10px;">${v.pinyin}</span></div><span onclick="speak('${v.hanzi}')" style="cursor: pointer; font-size: 1.2rem;">🔊</span></div><p>${v.meaning}</p><button class="btn btn-secondary" style="width: auto; margin-top: 0.5rem; font-size: 0.8rem;" onclick="navigate('practice', ${JSON.stringify(v).replace(/"/g, '&quot;')})">✍️ Luyện viết</button></div>`).join('')}<button class="btn" onclick="startReviewFromLesson()">Ôn tập bài này</button>`;
     container.innerHTML = html;
 }
 

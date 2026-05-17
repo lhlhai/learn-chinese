@@ -1,0 +1,37 @@
+[
+  {
+    "id": "lr001",
+    "title": "Bộ 亻 (Nhân) - Người",
+    "type": "radical",
+    "vocab_ids": ["v1_061", "v1_062", "v1_063", "v1_064", "v1_065"],
+    "description": "Các chữ liên quan đến con người và hành động của con người."
+  },
+  {
+    "id": "lr002",
+    "title": "Bộ 氵 (Thủy) - Nước",
+    "type": "radical",
+    "vocab_ids": ["v1_086", "v1_087", "v1_088", "v1_089", "v1_090"],
+    "description": "Các chữ liên quan đến chất lỏng, sông ngòi, nước."
+  },
+  {
+    "id": "lr003",
+    "title": "Bộ 女 (Nữ) - Phụ nữ",
+    "type": "radical",
+    "vocab_ids": ["v1_001", "v1_003", "v1_004", "v1_005"],
+    "description": "Các chữ liên quan đến phái nữ, gia đình."
+  },
+  {
+    "id": "lp001",
+    "title": "Nhóm âm 'ma'",
+    "type": "phonetic",
+    "vocab_ids": ["v1_003", "v1_004", "v1_005"],
+    "description": "Các chữ có phát âm tương tự 'ma'."
+  },
+  {
+    "id": "lp002",
+    "title": "Nhóm âm 'ba'",
+    "type": "phonetic",
+    "vocab_ids": ["v1_002", "v1_003", "v2_001"],
+    "description": "Các chữ có phát âm tương tự 'ba'."
+  }
+]
